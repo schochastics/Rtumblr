@@ -3,7 +3,7 @@
 #' This method returns general information about the blog, such as the title, number of posts, and other high-level data.
 #'
 #' @param blog name of the blog
-#' @param api_key
+#' @param api_key consumer key
 #'
 #' @return tibble of information about  blog
 #' @export
@@ -16,42 +16,21 @@ get_blog_info <- function(blog,api_key = NULL){
   parsed
 }
 
-#' Retrieve Blog's Likes
-#'
-#' This method can be used to retrieve the publicly exposed likes from a blog.
-#'
-#' @inheritParams get_blog_info
-#' @param limit The number of results to return: 1–20
-#' @param before Retrieve posts liked before the specified timestamp
-#' @param after Retrieve posts liked after the specified timestamp
-#' @param offset Liked post number to start at
-#' @details  You can only provide either before, after, or offset. If you provide more than one of these options together you will get an error.
-#' You can still use limit with any of those three options to limit your result set.
-#' When using the offset parameter the maximum limit on the offset is 1000. If you would like to get more results than that use either before or after.
-#'
-#' @return tibble of liked blog posts
-#' @export
-#'
-get_blog_likes <- function(blog,limit = 20, before,after,offset,api_key = NULL){
-  path <- paste0("v2/blog/",blog,"/likes")
-  params <- handle_params(list(limit = limit),before,after,offset)
-  output <- make_get_request(path,params,api_key)
-  output
-}
-
 #' Retrieve Published Posts
 #'
-#' @inheritParams get_blog_likes
+#' @inheritParams get_blog_info
+#' @param limit The number of results to return: 1–50
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
 #'
 #' @return a tibble of blog posts
 #' @export
-get_blog_posts <- function(blog,limit = 20,api_key = NULL,...){
+get_blog_posts <- function(blog,limit = 50,api_key = NULL,...){
   path <- paste0("v2/blog/",blog,"/posts")
-  params <- handle_params(list(limit = limit,type = type,npf = TRUE,...))
-  output <- make_get_request(path,params,api_key)
-  output
-  dplyr::bind_rows(lapply(output[["response"]][["posts"]],parse_blog_post))
+  params <- handle_params(list(limit = limit,npf = TRUE,...))
+  output_lst <- make_get_request(path,params,api_key)
+  output_tbl <- dplyr::bind_rows(lapply(output_lst[["response"]][["posts"]],parse_blog_post))
+  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
+  output_tbl
 }
 
 
@@ -83,8 +62,9 @@ parse_blog_post <- function(post){
   output[["blog"]] <- list(blog)
   output[["tags"]] <- tags
   output[["content"]] <- list(content)
-  output[["layout"]] <- post[["layout"]]
-  output[["trail"]] <- post[["trail"]]
+  output[["layout"]] <- ifelse(length(post[["layout"]])==0,I(list(list())),post[["layout"]])
+  output[["trail"]] <- ifelse(length(post[["trail"]])==0,I(list(list())),post[["trail"]])
+  output[["notes"]] <- ifelse(is.null(post[["notes"]]),I(list(list())),list(dplyr::bind_rows(post[["notes"]])))
   output <- dplyr::bind_rows(empty_post,output)
   output
 }
@@ -118,7 +98,9 @@ parse_content <- function(content){
     fields <- names(output)
     output[fields] <- lapply(content[fields], function(x) ifelse(is.null(x), NA, x))
   } else if(type=="video"){
-
+    output <- empty[["video"]]
+    fields <- names(output)
+    output[fields] <- lapply(content[fields], function(x) ifelse(is.null(x), NA, x))
   }
   output[["type"]] <- type
   output

@@ -44,6 +44,7 @@ empty[["blog_post"]] <- tibble::tibble(
   interactability_reblog = NA_character_,
   can_reblog = NA,
   can_send_in_message = NA,
+  notes = I(list(list())),
   can_reply = NA,
   display_avatar = NA
 )
