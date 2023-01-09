@@ -1,12 +1,5 @@
 # register app: https://www.tumblr.com/oauth/apps
 # get tokens: https://api.tumblr.com/console
-token <- list(
-  consumer_key = 'NTYuq3rdFwIWM2H13fRFoJ9sW1JzgcjIPgbXFSumTnAp9C4MV9',
-  consumer_secret = 'RuXGlU3WO4sLY5bLSrCnO3PiOmJPe20aKZAxQiEURXmemBmu1i',
-  token = 'TxAEygZfE29CMsIyFpXrHo3nBoRcjWB1EUEtXJR1fF0fe8a1Jj',
-  token_secret = 'UuhuibPXFWyrn9SzVZkzHBamFEKmrWBEjlXjc0x99RMRaPIxRq'
-)
-
 
 make_get_request <- function(path,params=list(),api_key = NULL){
 
