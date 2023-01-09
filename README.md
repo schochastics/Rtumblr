@@ -1,22 +1,12 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # RTumblr
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/RTumblr)](https://CRAN.R-project.org/package=RTumblr)
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/RTumblr)](https://CRAN.R-project.org/package=RTumblr)
 <!-- badges: end -->
 
 RTumblr is a wrapper for the official Tumblr API
@@ -33,8 +23,7 @@ devtools::install_github("schochastics/RTumblr")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example, eval = FALSE}
+``` r
 library(RTumblr)
 ## basic example code
 ```
-
