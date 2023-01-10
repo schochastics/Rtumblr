@@ -1,12 +1,12 @@
 # register app: https://www.tumblr.com/oauth/apps
 # get tokens: https://api.tumblr.com/console
 
-make_get_request <- function(path,params=list(),api_key = NULL){
+make_get_request <- function(path,params=list(),api_key = NULL,header=NULL){
 
   url <- httr::parse_url("https://api.tumblr.com")
   params <- c(params,api_key = api_key)
   request_results <- httr::GET(httr::modify_url(url, path = path),
-                               query = params,httr::user_agent("Rtumblr"))
+                               query = params,httr::user_agent("RTumblr"),header)
 
   status_code <- httr::status_code(request_results)
   if (!status_code %in% c(200)) {

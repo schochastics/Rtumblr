@@ -4,14 +4,16 @@
 \alias{get_blog_posts}
 \title{Retrieve Published Posts}
 \usage{
-get_blog_posts(blog, limit = 50, api_key = NULL, ...)
+get_blog_posts(blog, limit = 50, offset = 0, api_key = NULL, ...)
 }
 \arguments{
 \item{blog}{name of the blog}
 
 \item{limit}{The number of results to return: 1–50}
 
-\item{api_key}{consumer key}
+\item{offset}{post index to start at}
+
+\item{api_key}{app consumer key}
 
 \item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts}}
 }

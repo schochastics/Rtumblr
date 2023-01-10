@@ -9,7 +9,7 @@ get_blog_info(blog, api_key = NULL)
 \arguments{
 \item{blog}{name of the blog}
 
-\item{api_key}{consumer key}
+\item{api_key}{app consumer key}
 }
 \value{
 tibble of information about  blog

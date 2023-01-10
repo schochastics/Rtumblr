@@ -3,7 +3,7 @@
 #' This method returns general information about the blog, such as the title, number of posts, and other high-level data.
 #'
 #' @param blog name of the blog
-#' @param api_key consumer key
+#' @param api_key app consumer key
 #'
 #' @return tibble of information about  blog
 #' @export
@@ -20,17 +20,55 @@ get_blog_info <- function(blog,api_key = NULL){
 #'
 #' @inheritParams get_blog_info
 #' @param limit The number of results to return: 1–50
+#' @param offset post index to start at
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
 #'
 #' @return a tibble of blog posts
 #' @export
-get_blog_posts <- function(blog,limit = 50,api_key = NULL,...){
+get_blog_posts <- function(blog,limit = 50,offset = 0,api_key = NULL,...){
   path <- paste0("v2/blog/",blog,"/posts")
-  params <- handle_params(list(limit = limit,npf = TRUE,...))
+  params <- handle_params(list(limit = limit,offset = offset,npf = TRUE,...))
   output_lst <- make_get_request(path,params,api_key)
   output_tbl <- dplyr::bind_rows(lapply(output_lst[["response"]][["posts"]],parse_blog_post))
   attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
   output_tbl
+}
+
+#' Retrieve following
+#'
+#'This method can be used to retrieve the publicly exposed list of blogs that a blog follows, in order from most recently-followed to first.
+#' Only works ith your own account
+#' @inheritParams get_blog_posts
+#' @param app_credentials a named list containing the consumer key and consumer secret
+#' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
+#'
+#' @return a tibble of blogs
+#' @export
+get_blog_following <- function(blog,limit = 50,offset=0,app_credentials,...){
+  api_key <- NULL
+  path <- paste0("v2/blog/",blog,"/following")
+  params <- handle_params(list(limit = limit,offset = 0,...))
+  oauth_head <- handle_oauth1(app_credentials,path,params)
+  output_lst <- make_get_request(path = path,params = oauth_head$params,api_key = api_key,header = oauth_head$header)
+  output_lst
+}
+
+#' Retrieve following
+#'
+#'This method can be used to retrieve the publicly exposed list of blogs that follow a blog, in order from most recently-followed to first.
+#' Only works ith your own account
+#' @inheritParams get_blog_following
+#' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
+#'
+#' @return a tibble of blogs
+#' @export
+get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials,...){
+  api_key <- NULL
+  path <- paste0("v2/blog/",blog,"/followers")
+  params <- handle_params(list(limit = limit,offset = 0,...))
+  oauth_head <- handle_oauth1(app_credentials,path,params)
+  output_lst <- make_get_request(path = path,params = oauth_head$params,api_key = api_key,header = oauth_head$header)
+  output_lst
 }
 
 
