@@ -29,3 +29,16 @@ oauth_encode1 <- function (x){
   chars[!ok] <- unlist(lapply(chars[!ok], encode))
   paste0(chars, collapse = "")
 }
+
+get_rtumblr_token_from_envvar <- function(name="RTUMBLR_TOKEN"){
+  var <- Sys.getenv(name)
+  if(var==""){
+    stop("No tumblr token found in env variables",call.=FALSE)
+  }
+  var_splt <- strsplit(var,";")[[1]]
+  app_credentials <- list(
+    consumer_key = var_splt[1],
+    consumer_secret = var_splt[2]
+  )
+  app_credentials
+}
