@@ -5,7 +5,6 @@ handle_oauth1 <- function(app_credentials = NULL,path,params){
   app <- httr::oauth_app("RTumblr",key=app_credentials$consumer_key,
                          secret=app_credentials$consumer_secret)
   token <- httr::oauth1.0_token(tumblr,app)
-  # sign <- config(token = token)
   oauth <- httr::oauth_signature(httr::modify_url(url, path = path),method="GET",app = app,
                         token=token$credentials$oauth_token,
                         token_secret=token$credentials$oauth_token_secret, other_params = params)
