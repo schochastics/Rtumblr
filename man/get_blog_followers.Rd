@@ -2,7 +2,7 @@
 % Please edit documentation in R/blogs.R
 \name{get_blog_followers}
 \alias{get_blog_followers}
-\title{Retrieve following}
+\title{Retrieve followers}
 \usage{
 get_blog_followers(blog, limit = 50, offset = 0, app_credentials, ...)
 }
@@ -22,5 +22,5 @@ a tibble of blogs
 }
 \description{
 This method can be used to retrieve the publicly exposed list of blogs that follow a blog, in order from most recently-followed to first.
-Only works ith your own account
+Only works with your own account
 }

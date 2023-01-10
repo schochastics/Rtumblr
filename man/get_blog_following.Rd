@@ -22,5 +22,5 @@ a tibble of blogs
 }
 \description{
 This method can be used to retrieve the publicly exposed list of blogs that a blog follows, in order from most recently-followed to first.
-Only works ith your own account
+Only works with your own account
 }

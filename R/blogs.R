@@ -37,7 +37,7 @@ get_blog_posts <- function(blog,limit = 50,offset = 0,api_key = NULL,...){
 #' Retrieve following
 #'
 #'This method can be used to retrieve the publicly exposed list of blogs that a blog follows, in order from most recently-followed to first.
-#' Only works ith your own account
+#' Only works with your own account
 #' @inheritParams get_blog_posts
 #' @param app_credentials a named list containing the consumer key and consumer secret
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
@@ -53,10 +53,10 @@ get_blog_following <- function(blog,limit = 50,offset=0,app_credentials,...){
   output_lst
 }
 
-#' Retrieve following
+#' Retrieve followers
 #'
-#'This method can be used to retrieve the publicly exposed list of blogs that follow a blog, in order from most recently-followed to first.
-#' Only works ith your own account
+#' This method can be used to retrieve the publicly exposed list of blogs that follow a blog, in order from most recently-followed to first.
+#' Only works with your own account
 #' @inheritParams get_blog_following
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts>
 #'
