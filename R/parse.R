@@ -98,16 +98,16 @@ parse_blog_post_legacy <- function(post){
   output[["trail"]] <- ifelse(length(post[["trail"]])==0,I(list(list())),post[["trail"]])
   output[["notes"]] <- ifelse(is.null(post[["notes"]]),I(list(list())),list(dplyr::bind_rows(post[["notes"]])))
 
-  output[["title"]] <- NA_character_
-  output[["body"]]  <- NA_character_
-
   type <- post[["type"]]
 
   if(type=="text"){
     output[["title"]] <- post[["title"]]
     output[["body"]] <- post[["body"]]
   } else if(type=="photo"){
-    alt_sizes <- list(dplyr::bind_rows(post[["photos"]][["alt_sizes"]]))
+    # alt_sizes <- lapply(post[["photos"]],function(x) dplyr::bind_rows(x[["alt_sizes"]])) TODO:include???
+    photo <- dplyr::bind_rows(lapply(post[["photos"]],function(x) dplyr::bind_rows(x[["original_size"]])))
+    photo[["captions"]] <- vapply(post[["photos"]],function(x) (x[["caption"]]),character(1))
+    output[["photo"]] <- list(photo)
 
   } else if(type=="link"){
 
