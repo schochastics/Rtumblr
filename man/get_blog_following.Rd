@@ -4,7 +4,7 @@
 \alias{get_blog_following}
 \title{Retrieve following}
 \usage{
-get_blog_following(blog, limit = 50, offset = 0, app_credentials, ...)
+get_blog_following(blog, limit = 50, offset = 0, app_credentials = NULL, ...)
 }
 \arguments{
 \item{blog}{name of the blog}
@@ -13,14 +13,14 @@ get_blog_following(blog, limit = 50, offset = 0, app_credentials, ...)
 
 \item{offset}{post index to start at}
 
-\item{app_credentials}{a named list containing the consumer key and consumer secret}
+\item{app_credentials}{a named list containing the consumer key and consumer secret. If NULL, attempts to load from an env variable}
 
-\item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2#posts--retrieve-published-posts}}
+\item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2}}
 }
 \value{
 a tibble of blogs
 }
 \description{
 This method can be used to retrieve the publicly exposed list of blogs that a blog follows, in order from most recently-followed to first.
-Only works with your own account
+\strong{Only works with your own account}
 }

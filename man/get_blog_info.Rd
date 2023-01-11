@@ -9,11 +9,16 @@ get_blog_info(blog, api_key = NULL)
 \arguments{
 \item{blog}{name of the blog}
 
-\item{api_key}{app consumer key}
+\item{api_key}{app consumer key. If NULL, attempts to load from an env variable}
 }
 \value{
 tibble of information about  blog
 }
 \description{
 This method returns general information about the blog, such as the title, number of posts, and other high-level data.
+}
+\examples{
+\dontrun{
+get_blog_info("schochastics")
+}
 }

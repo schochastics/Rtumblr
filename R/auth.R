@@ -30,7 +30,7 @@ oauth_encode1 <- function (x){
   paste0(chars, collapse = "")
 }
 
-get_rtumblr_token_from_envvar <- function(name="RTUMBLR_TOKEN"){
+get_rtumblr_token_from_envvar <- function(name = "RTUMBLR_TOKEN"){
   var <- Sys.getenv(name)
   if(var==""){
     stop("No tumblr token found in env variables",call.=FALSE)
