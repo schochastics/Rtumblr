@@ -9,7 +9,9 @@
 status](https://www.r-pkg.org/badges/version/RTumblr)](https://CRAN.R-project.org/package=RTumblr)
 <!-- badges: end -->
 
-RTumblr is a wrapper for the official Tumblr API
+RTumblr is a wrapper for the official Tumblr API. (An [existing
+CRAN](https://cran.r-project.org/web/packages/tumblR/index.html) package
+has been archived)
 
 ## Installation
 
