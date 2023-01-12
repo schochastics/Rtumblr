@@ -1,0 +1,973 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tumblr.com/v2/tagged?tag=writer&limit=20&api_key=<<<API TOKEN>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      accept-ranges: bytes
+      content-encoding: gzip
+      content-length: '19651'
+      content-type: application/json; charset=utf-8
+      date: Thu, 12 Jan 2023 19:47:41 GMT
+      p3p: 'CP="Tumblr''s privacy policy is available here: https://www.tumblr.com/policy/en/privacy"'
+      server: nginx
+      strict-transport-security: max-age=31536000; preload
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      x-ratelimit-perday-limit: '5000'
+      x-ratelimit-perday-remaining: '4990'
+      x-ratelimit-perday-reset: '85228'
+      x-ratelimit-perhour-limit: '1000'
+      x-ratelimit-perhour-remaining: '990'
+      x-ratelimit-perhour-reset: '2428'
+      x-rid: 745179772aa037c5bb9934f5838d671f
+      x-robots-tag: noindex, nofollow
+      x-ua-compatible: IE=Edge,chrome=1
+    body:
+      encoding: ''
+      file: no
+      string: "{\"meta\":{\"status\":200,\"msg\":\"OK\"},\"response\":[{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"doll-poetry\",\"blog\":{\"name\":\"doll-poetry\",\"title\":\"Doll
+        Poetry♡\",\"description\":\"My original poetry either from the day of or the
+        Poetic Archives\",\"url\":\"https://www.tumblr.com/blog/view/doll-poetry\",\"uuid\":\"t:sP3nTAQkptE8dc_mTP-3yw\",\"updated\":1673552657,\"tumblrmart_accessories\":{}},\"id\":706271151811346432,\"id_string\":\"706271151811346432\",\"post_url\":\"https://www.tumblr.com/blog/view/doll-poetry/706271151811346432\",\"slug\":\"new-appearance\",\"date\":\"2023-01-12
+        19:44:17 GMT\",\"timestamp\":1673552657,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"KNHQygsz\",\"tags\":[\"New
+        appearance\",\"poetry blog\",\"poetry\",\"writer\",\"mypoetry\",\"poems\",\"picturepoetry\",\"graphicdesign\",\"poets
+        on tumblr\",\"poets\",\"poetsandwriters\",\"female poets\",\"poetblr\",\"poetic\",\"poems
+        on tumblr\",\"Design\",\"Like\",\"Reblog\",\"Comment\",\"Follow\"],\"short_url\":\"https://tmblr.co/ZGxlaTdDBTxUqa00\",\"summary\":\"♡NEW♡
+        Appearance》》》\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":1,\"title\":\"\",\"body\":\"<h1>♡NEW♡
+        Appearance》》》</h1><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/518b3a9bcc5b266d4c3f1c1296c9dbbf/c7ba8eb6e73436c8-27/s640x960/b6171e1edf00e743d4fbc41c26353f74dc344987.jpg\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"/></figure></div><p>What
+        do you guys think?♡</p><p>My book is still available, just figuring it out\U0001F338\U0001F338\U0001F338\U0001F338</p>\",\"reblog\":{\"comment\":\"<p><h1>♡NEW♡
+        Appearance》》》</h1><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/518b3a9bcc5b266d4c3f1c1296c9dbbf/c7ba8eb6e73436c8-27/s640x960/b6171e1edf00e743d4fbc41c26353f74dc344987.jpg\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"></figure></div><p>What
+        do you guys think?♡</p><p>My book is still available, just figuring it out\U0001F338\U0001F338\U0001F338\U0001F338</p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"doll-poetry\",\"active\":true,\"theme\":{\"header_full_width\":720,\"header_full_height\":1480,\"header_focus_width\":720,\"header_focus_height\":405,\"avatar_shape\":\"square\",\"background_color\":\"#f0d8ed\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"537,720,942,0\",\"header_image\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s1080x1080/4dc2f6226b4adde31ca1d43ff4237af9a4664ea4.png\",\"header_image_focused\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s2048x3072_c0,36284,100000,63649/6d10376a56545887faf4e1eeb25c09916657fd3c.png\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s2048x3072/2a04b4af11ba87c59b9c3fd8436e957560d31474.png\",\"header_stretch\":true,\"link_color\":\"#ffffff\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#e2a3d1\",\"title_font\":\"Streetscript\",\"title_font_weight\":\"regular\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706271151811346432\"},\"content_raw\":\"<p><h1>♡NEW♡
+        Appearance》》》</h1><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/518b3a9bcc5b266d4c3f1c1296c9dbbf/c7ba8eb6e73436c8-27/s640x960/b6171e1edf00e743d4fbc41c26353f74dc344987.jpg\\\"
+        data-orig-height=\\\"2340\\\" data-orig-width=\\\"1080\\\"></figure></div><p>What
+        do you guys think?♡</p><p>My book is still available, just figuring it out\U0001F338\U0001F338\U0001F338\U0001F338</p></p>\",\"content\":\"<p><h1>&#9825;NEW&#9825;
+        Appearance&#12299;&#12299;&#12299;</h1><figure class=\\\"tmblr-full\\\"><img
+        src=\\\"https://64.media.tumblr.com/518b3a9bcc5b266d4c3f1c1296c9dbbf/c7ba8eb6e73436c8-27/s640x960/b6171e1edf00e743d4fbc41c26353f74dc344987.jpg\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>What do you guys think?&#9825;</p><p>My
+        book is still available, just figuring it out&#127800;&#127800;&#127800;&#127800;</p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"doll-poetry\",\"blog\":{\"name\":\"doll-poetry\",\"title\":\"Doll
+        Poetry♡\",\"description\":\"My original poetry either from the day of or the
+        Poetic Archives\",\"url\":\"https://www.tumblr.com/blog/view/doll-poetry\",\"uuid\":\"t:sP3nTAQkptE8dc_mTP-3yw\",\"updated\":1673552657,\"tumblrmart_accessories\":{}},\"id\":706270280013758464,\"id_string\":\"706270280013758464\",\"post_url\":\"https://www.tumblr.com/blog/view/doll-poetry/706270280013758464\",\"slug\":\"sittin-duck\",\"date\":\"2023-01-12
+        19:30:26 GMT\",\"timestamp\":1673551826,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"k2ujxY34\",\"tags\":[\"instagram\",\"mypoetry\",\"writer\",\"poems\",\"poetry\",\"poets\",\"poets
+        on tumblr\",\"picturepoetry\",\"tumblr blog\",\"Tumblr\",\"like\",\"Follow\",\"Reblog\"],\"short_url\":\"https://tmblr.co/ZGxlaTdDBHFZei00\",\"summary\":\"Sittin
+        Duck\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":1,\"title\":\"\",\"body\":\"<h1>Sittin
+        Duck</h1><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1920\\\"
+        data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/2ede97ea64f47d5369ec01f879cbb777/b0176ae92c44c8a6-61/s640x960/1d27362c562121a3ff1bd9b751ebc776e7aa3ed8.jpg\\\"
+        data-orig-height=\\\"1920\\\" data-orig-width=\\\"1080\\\"/></figure></div><p>Instagram♡》》
+        multi._doll</p>\",\"reblog\":{\"comment\":\"<p><h1>Sittin Duck</h1><div class=\\\"npf_row\\\"><figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"1920\\\" data-orig-width=\\\"1080\\\"><img
+        src=\\\"https://64.media.tumblr.com/2ede97ea64f47d5369ec01f879cbb777/b0176ae92c44c8a6-61/s640x960/1d27362c562121a3ff1bd9b751ebc776e7aa3ed8.jpg\\\"
+        data-orig-height=\\\"1920\\\" data-orig-width=\\\"1080\\\"></figure></div><p>Instagram♡》》
+        multi._doll</p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"doll-poetry\",\"active\":true,\"theme\":{\"header_full_width\":720,\"header_full_height\":1480,\"header_focus_width\":720,\"header_focus_height\":405,\"avatar_shape\":\"square\",\"background_color\":\"#f0d8ed\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"537,720,942,0\",\"header_image\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s1080x1080/4dc2f6226b4adde31ca1d43ff4237af9a4664ea4.png\",\"header_image_focused\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s2048x3072_c0,36284,100000,63649/6d10376a56545887faf4e1eeb25c09916657fd3c.png\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/ba04fd318e4634f5dba1e79a6160fa75/77ecaa2714f82d8d-96/s2048x3072/2a04b4af11ba87c59b9c3fd8436e957560d31474.png\",\"header_stretch\":true,\"link_color\":\"#ffffff\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#e2a3d1\",\"title_font\":\"Streetscript\",\"title_font_weight\":\"regular\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706270280013758464\"},\"content_raw\":\"<p><h1>Sittin
+        Duck</h1><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1920\\\"
+        data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/2ede97ea64f47d5369ec01f879cbb777/b0176ae92c44c8a6-61/s640x960/1d27362c562121a3ff1bd9b751ebc776e7aa3ed8.jpg\\\"
+        data-orig-height=\\\"1920\\\" data-orig-width=\\\"1080\\\"></figure></div><p>Instagram♡》》
+        multi._doll</p></p>\",\"content\":\"<p><h1>Sittin Duck</h1><figure class=\\\"tmblr-full\\\"><img
+        src=\\\"https://64.media.tumblr.com/2ede97ea64f47d5369ec01f879cbb777/b0176ae92c44c8a6-61/s640x960/1d27362c562121a3ff1bd9b751ebc776e7aa3ed8.jpg\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>Instagram&#9825;&#12299;&#12299;
+        multi._doll</p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"sittinwithyou\",\"blog\":{\"name\":\"sittinwithyou\",\"title\":\"...wherever
+        you are.\",\"description\":\"Hello, everybody. Michael LeBlanc here, sittin'
+        with you wherever you are. Welcome to my Tumblr. \U0001F495\",\"url\":\"https://sittinwithyou.tumblr.com/\",\"uuid\":\"t:rZdT7dfOmYe_ZsFmAekbCA\",\"updated\":1673550213,\"tumblrmart_accessories\":{}},\"id\":706268588217106432,\"id_string\":\"706268588217106432\",\"post_url\":\"https://sittinwithyou.tumblr.com/post/706268588217106432/monthly-quota-quordleprompt-20\",\"slug\":\"monthly-quota-quordleprompt-20\",\"date\":\"2023-01-12
+        19:03:32 GMT\",\"timestamp\":1673550212,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"zzmjpgui\",\"tags\":[\"quordle\",\"word
+        prompt\",\"short stories\",\"writers on tumblr\",\"writer\",\"author\",\"action\",\"adventure\",\"brokers\",\"bounty
+        hunters\",\"super powers\"],\"short_url\":\"https://tmblr.co/ZGk2FRdDAudyie00\",\"summary\":\"Monthly
+        Quota\\n#QuordlePrompt 20\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<h1>Monthly
+        Quota<br/>#QuordlePrompt 20</h1><p>On my <a href=\\\"https://www.wattpad.com/1302750198-prompting-needed_-monthly-quota\\\"
+        target=\\\"_blank\\\">Wattpad</a>!</p><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"><img src=\\\"https://64.media.tumblr.com/7e4dd56ff545b8f931a0255460132383/69b93ce02d1e2500-4a/s640x960/82541e5204d95da4d35e9658fb9cdd7f98949fc7.png\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"/></figure></div><p>He
+        noticed that his accent was flowing particularly thick today. Each word swirled
+        with Southern syrupiness that sweetened the air before curling into the various
+        mahogany surfaces. “That’s the reason we <i>had</i> that chiseled into the
+        <b><i>by</i>law</b>s, Jason.” Thomas swiveled in his chair and flashed his
+        brightest grin to the smaller, pale gentleman on the other side of the desk.
+        The leather of the chair creaked only slightly as the bearings in the base
+        offered no complaints to the shift of his weight. His fingers drummed on the
+        wooden armrest. The steady <i>tap-tap-tap­ </i>paired well with the beating
+        of rain against the windows behind him. Lightning flashed, and that spike
+        of light coated the room in a blue-white glare for a split second. A ghostly
+        afterimage, like a world only barely perceptible with the naked eye, lingered
+        for a moment before the dim incandescent bulbs reasserted the darkened office.
+        And then there was Jason.</p><p>Little, <b>pasty</b> Jason sat on the bare
+        wooden bench and looked up into Thomas’s face with simple expectation. He
+        had his blazer folded on his knees with his hands laced on top. His white
+        button-up shirt was immaculately ironed, and the man’s collar could cut hard
+        cheese without a fold. Thomas liked Jason. Well, maybe just a bit more than
+        he could like any of his supporting staff. That’s why it angered him when
+        Jason asked questions that were rhetorical.</p><p>“Every member of this…”
+        Thomas twirled his hand as if stirring the ether, “<i>organization</i> needs
+        to bring in their keep. Whether it’s through the bounty channels or through
+        their own means, everyone <i>delivers</i>. If they don’t produce at least
+        one fulfilled contract per month, they’re out.”</p><p>Jason nodded and refolded
+        his hands on his lap. “Yes sir. No one is disputing that, sir, but it’s the
+        matter of this <i>particular</i> contract-”</p><p>In contrast to Thomas’s
+        own voice, Jason’s accent was as flat as his shirt. Thomas steamrolled over
+        it with a booming, “You’re referring to the <i>half-bred</i>.”</p><p>He scrutinized
+        the little man’s face for a sign of being perturbed at the harsh way Thomas
+        had dropped the description from his mouth. It had plopped out like a slur.
+        To Jason’s credit, he bore the term with little more than a <b>blink</b>,
+        and then nodded in agreement. Damn, but he was a good assistant.</p><p>“Yes
+        sir, the half human, half Oryctolagus Cuniculus. Goes by the name of Nib.”
+        Jason glanced off to the side. “I’m still a bit miffed that no one has ascertained
+        as to whether it’s a code name or not.” He shook his head, and returned his
+        smile towards Thomas who merely arched an eyebrow. “Our operatives have been
+        delivering payloads regularly. Everyone is on schedule.”</p><p><i>Tap-tap-tap</i>.
+        Thomas felt a heat build up behind his eyes. <i>Tap-tap-tap.</i> He leaned
+        forward, this time eliciting a quiet groan of complaint from the chair beneath
+        him. His fingers came together in front of him and steepled below his chin.
+        “It’s a game of numbahs.” He heard the word slip from him without an ‘r’ on
+        the end, but the anger was superseding proper diction. “We’ve had the contract
+        for this mutated freak in our grasp for <i>five BLAZIN’ years</i>, Jason.”
+        Thomas placed his hands on the blotter before him and mentally dared the other
+        man to flinch beneath his stare. Jason bore the heat with no outward adjustments.
+        “We’ve had other contracts in and out in that time, some as soon as <i>days</i>.”
+        The moleskin beneath his fingers began to curl steam from its cool surface
+        and the stench of cooking leather began to build beneath his nose. “And yet
+        somehow a whole <i>GOT-DAMNED </i>team of professional body brokers can’t
+        find one bunny-man and his talkin’ toaster.”</p><p>Jason shifted his grip
+        on his own hands again. There was a dip in the man’s smile now. “To be fair,
+        sir, the ‘talking toaster’ as you’ve named it is strong, quick, and proficient
+        in the art of body guarding.” His eyes dipped towards the desk’s surface where
+        lines of char spread from Thomas’s fingers like black lightning. The room
+        flashed again as the storm outside continued to beat against the manor’s walls.
+        He returned his light, round eyes up to his boss’s face. “Everyone has met
+        their quotas, sir.” The smile, that little line of <b>suave</b> confidence,
+        curved again beneath Jason’s nose.</p><p><i>It&rsquo;d be hard to smile through
+        a scar,</i> Thomas thought before he realized what he was thinking. He froze.
+        Crackling sounds were starting to come from the desk’s surface. He lifted
+        his fingers from the ruined blotter and sat back, willing the heat to recede
+        back into his core. He laced his fingers over his gut and turned to face back
+        out the windows. He could still feel the anger slithering and chafing inside,
+        begging for a physical release. He snorted as he examined the roiling sky
+        and its organic light show. “I want him found, bagged, and tagged, Jason.
+        With <i>prejudice</i> that would make my <i>ancestors</i> blush, is that clear?”</p><p>There
+        was a long pause. Thomas could only assume Jason was consulting something
+        on his phone before he responded. He was no doubt responding to the messages
+        that had led him to requesting this meeting. Thomas heard the little click
+        of the phone being locked before Jason asked, “They’ll need assurances that
+        no one will be fired simply because they fail one acquisition if their ledgers
+        are in the black, sir. Otherwise…”</p><p>Thomas nodded. The squirming, liquid
+        heat of his fire raged within him, aching to be released. His eyes darted
+        across the racing clouds above. “Fine. But I swear to the Lord above, Jason.
+        If I so much as sniff the color red in one of their books, the example set
+        by their dismissal will make last week’s bonfire seem like a snuffed-out match.”</p><p>“That’s
+        all they’ll need to hear, sir,” Jason agreed. “Good night, sir.” Thomas never
+        heard the small man get up or walk away. The only indication he had of the
+        assistant’s exit was the muted catch of the door in its frame.</p>\",\"reblog\":{\"comment\":\"<p><h1>Monthly
+        Quota<br>#QuordlePrompt 20</h1><p>On my <a href=\\\"https://www.wattpad.com/1302750198-prompting-needed_-monthly-quota\\\"
+        target=\\\"_blank\\\">Wattpad</a>!</p><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"><img src=\\\"https://64.media.tumblr.com/7e4dd56ff545b8f931a0255460132383/69b93ce02d1e2500-4a/s640x960/82541e5204d95da4d35e9658fb9cdd7f98949fc7.png\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"></figure></div><p>He
+        noticed that his accent was flowing particularly thick today. Each word swirled
+        with Southern syrupiness that sweetened the air before curling into the various
+        mahogany surfaces. “That’s the reason we <i>had</i> that chiseled into the
+        <b><i>by</i>law</b>s, Jason.” Thomas swiveled in his chair and flashed his
+        brightest grin to the smaller, pale gentleman on the other side of the desk.
+        The leather of the chair creaked only slightly as the bearings in the base
+        offered no complaints to the shift of his weight. His fingers drummed on the
+        wooden armrest. The steady <i>tap-tap-tap­ </i>paired well with the beating
+        of rain against the windows behind him. Lightning flashed, and that spike
+        of light coated the room in a blue-white glare for a split second. A ghostly
+        afterimage, like a world only barely perceptible with the naked eye, lingered
+        for a moment before the dim incandescent bulbs reasserted the darkened office.
+        And then there was Jason.</p><p>Little, <b>pasty</b> Jason sat on the bare
+        wooden bench and looked up into Thomas’s face with simple expectation. He
+        had his blazer folded on his knees with his hands laced on top. His white
+        button-up shirt was immaculately ironed, and the man’s collar could cut hard
+        cheese without a fold. Thomas liked Jason. Well, maybe just a bit more than
+        he could like any of his supporting staff. That’s why it angered him when
+        Jason asked questions that were rhetorical.</p><p>“Every member of this…”
+        Thomas twirled his hand as if stirring the ether, “<i>organization</i> needs
+        to bring in their keep. Whether it’s through the bounty channels or through
+        their own means, everyone <i>delivers</i>. If they don’t produce at least
+        one fulfilled contract per month, they’re out.”</p><p>Jason nodded and refolded
+        his hands on his lap. “Yes sir. No one is disputing that, sir, but it’s the
+        matter of this <i>particular</i> contract-”</p><p>In contrast to Thomas’s
+        own voice, Jason’s accent was as flat as his shirt. Thomas steamrolled over
+        it with a booming, “You’re referring to the <i>half-bred</i>.”</p><p>He scrutinized
+        the little man’s face for a sign of being perturbed at the harsh way Thomas
+        had dropped the description from his mouth. It had plopped out like a slur.
+        To Jason’s credit, he bore the term with little more than a <b>blink</b>,
+        and then nodded in agreement. Damn, but he was a good assistant.</p><p>“Yes
+        sir, the half human, half Oryctolagus Cuniculus. Goes by the name of Nib.”
+        Jason glanced off to the side. “I’m still a bit miffed that no one has ascertained
+        as to whether it’s a code name or not.” He shook his head, and returned his
+        smile towards Thomas who merely arched an eyebrow. “Our operatives have been
+        delivering payloads regularly. Everyone is on schedule.”</p><p><i>Tap-tap-tap</i>.
+        Thomas felt a heat build up behind his eyes. <i>Tap-tap-tap.</i> He leaned
+        forward, this time eliciting a quiet groan of complaint from the chair beneath
+        him. His fingers came together in front of him and steepled below his chin.
+        “It’s a game of numbahs.” He heard the word slip from him without an ‘r’ on
+        the end, but the anger was superseding proper diction. “We’ve had the contract
+        for this mutated freak in our grasp for <i>five BLAZIN’ years</i>, Jason.”
+        Thomas placed his hands on the blotter before him and mentally dared the other
+        man to flinch beneath his stare. Jason bore the heat with no outward adjustments.
+        “We’ve had other contracts in and out in that time, some as soon as <i>days</i>.”
+        The moleskin beneath his fingers began to curl steam from its cool surface
+        and the stench of cooking leather began to build beneath his nose. “And yet
+        somehow a whole <i>GOT-DAMNED </i>team of professional body brokers can’t
+        find one bunny-man and his talkin’ toaster.”</p><p>Jason shifted his grip
+        on his own hands again. There was a dip in the man’s smile now. “To be fair,
+        sir, the ‘talking toaster’ as you’ve named it is strong, quick, and proficient
+        in the art of body guarding.” His eyes dipped towards the desk’s surface where
+        lines of char spread from Thomas’s fingers like black lightning. The room
+        flashed again as the storm outside continued to beat against the manor’s walls.
+        He returned his light, round eyes up to his boss’s face. “Everyone has met
+        their quotas, sir.” The smile, that little line of <b>suave</b> confidence,
+        curved again beneath Jason’s nose.</p><p><i>It’d be hard to smile through
+        a scar,</i> Thomas thought before he realized what he was thinking. He froze.
+        Crackling sounds were starting to come from the desk’s surface. He lifted
+        his fingers from the ruined blotter and sat back, willing the heat to recede
+        back into his core. He laced his fingers over his gut and turned to face back
+        out the windows. He could still feel the anger slithering and chafing inside,
+        begging for a physical release. He snorted as he examined the roiling sky
+        and its organic light show. “I want him found, bagged, and tagged, Jason.
+        With <i>prejudice</i> that would make my <i>ancestors</i> blush, is that clear?”</p><p>There
+        was a long pause. Thomas could only assume Jason was consulting something
+        on his phone before he responded. He was no doubt responding to the messages
+        that had led him to requesting this meeting. Thomas heard the little click
+        of the phone being locked before Jason asked, “They’ll need assurances that
+        no one will be fired simply because they fail one acquisition if their ledgers
+        are in the black, sir. Otherwise…”</p><p>Thomas nodded. The squirming, liquid
+        heat of his fire raged within him, aching to be released. His eyes darted
+        across the racing clouds above. “Fine. But I swear to the Lord above, Jason.
+        If I so much as sniff the color red in one of their books, the example set
+        by their dismissal will make last week’s bonfire seem like a snuffed-out match.”</p><p>“That’s
+        all they’ll need to hear, sir,” Jason agreed. “Good night, sir.” Thomas never
+        heard the small man get up or walk away. The only indication he had of the
+        assistant’s exit was the muted catch of the door in its frame.</p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"sittinwithyou\",\"active\":true,\"theme\":{\"header_full_width\":1350,\"header_full_height\":450,\"header_focus_width\":759,\"header_focus_height\":426,\"avatar_shape\":\"circle\",\"background_color\":\"#dcecf5\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"0,1041,426,282\",\"header_image\":\"https://64.media.tumblr.com/a95ff0dd76557e44d43a1f4dcc5a3495/9bb263e8b397af35-58/s1350x450/1d399187991d2eaea767328151ab4612f5a5e24f.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/a95ff0dd76557e44d43a1f4dcc5a3495/9bb263e8b397af35-58/s2048x3072_c20889,0,77111,94667/cf57b10127fa18df6c391d3b7051787b38507fcb.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/a95ff0dd76557e44d43a1f4dcc5a3495/9bb263e8b397af35-58/s2048x3072/f757744d7ccd98b517530d17549ca30ed9760203.jpg\",\"header_stretch\":true,\"link_color\":\"#613d12\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Calluna\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706268588217106432\"},\"content_raw\":\"<p><h1>Monthly
+        Quota<br>#QuordlePrompt 20</h1><p>On my <a href=\\\"https://www.wattpad.com/1302750198-prompting-needed_-monthly-quota\\\"
+        target=\\\"_blank\\\">Wattpad</a>!</p><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"><img src=\\\"https://64.media.tumblr.com/7e4dd56ff545b8f931a0255460132383/69b93ce02d1e2500-4a/s640x960/82541e5204d95da4d35e9658fb9cdd7f98949fc7.png\\\"
+        data-orig-height=\\\"640\\\" data-orig-width=\\\"512\\\"></figure></div><p>He
+        noticed that his accent was flowing particularly thick today. Each word swirled
+        with Southern syrupiness that sweetened the air before curling into the various
+        mahogany surfaces. “That’s the reason we <i>had</i> that chiseled into the
+        <b><i>by</i>law</b>s, Jason.” Thomas swiveled in his chair and flashed his
+        brightest grin to the smaller, pale gentleman on the other side of the desk.
+        The leather of the chair creaked only slightly as the bearings in the base
+        offered no complaints to the shift of his weight. His fingers drummed on the
+        wooden armrest. The steady <i>tap-tap-tap­ </i>paired well with the beating
+        of rain against the windows behind him. Lightning flashed, and that spike
+        of light coated the room in a blue-white glare for a split second. A ghostly
+        afterimage, like a world only barely perceptible with the naked eye, lingered
+        for a moment before the dim incandescent bulbs reasserted the darkened office.
+        And then there was Jason.</p><p>Little, <b>pasty</b> Jason sat on the bare
+        wooden bench and looked up into Thomas’s face with simple expectation. He
+        had his blazer folded on his knees with his hands laced on top. His white
+        button-up shirt was immaculately ironed, and the man’s collar could cut hard
+        cheese without a fold. Thomas liked Jason. Well, maybe just a bit more than
+        he could like any of his supporting staff. That’s why it angered him when
+        Jason asked questions that were rhetorical.</p><p>“Every member of this…”
+        Thomas twirled his hand as if stirring the ether, “<i>organization</i> needs
+        to bring in their keep. Whether it’s through the bounty channels or through
+        their own means, everyone <i>delivers</i>. If they don’t produce at least
+        one fulfilled contract per month, they’re out.”</p><p>Jason nodded and refolded
+        his hands on his lap. “Yes sir. No one is disputing that, sir, but it’s the
+        matter of this <i>particular</i> contract-”</p><p>In contrast to Thomas’s
+        own voice, Jason’s accent was as flat as his shirt. Thomas steamrolled over
+        it with a booming, “You’re referring to the <i>half-bred</i>.”</p><p>He scrutinized
+        the little man’s face for a sign of being perturbed at the harsh way Thomas
+        had dropped the description from his mouth. It had plopped out like a slur.
+        To Jason’s credit, he bore the term with little more than a <b>blink</b>,
+        and then nodded in agreement. Damn, but he was a good assistant.</p><p>“Yes
+        sir, the half human, half Oryctolagus Cuniculus. Goes by the name of Nib.”
+        Jason glanced off to the side. “I’m still a bit miffed that no one has ascertained
+        as to whether it’s a code name or not.” He shook his head, and returned his
+        smile towards Thomas who merely arched an eyebrow. “Our operatives have been
+        delivering payloads regularly. Everyone is on schedule.”</p><p><i>Tap-tap-tap</i>.
+        Thomas felt a heat build up behind his eyes. <i>Tap-tap-tap.</i> He leaned
+        forward, this time eliciting a quiet groan of complaint from the chair beneath
+        him. His fingers came together in front of him and steepled below his chin.
+        “It’s a game of numbahs.” He heard the word slip from him without an ‘r’ on
+        the end, but the anger was superseding proper diction. “We’ve had the contract
+        for this mutated freak in our grasp for <i>five BLAZIN’ years</i>, Jason.”
+        Thomas placed his hands on the blotter before him and mentally dared the other
+        man to flinch beneath his stare. Jason bore the heat with no outward adjustments.
+        “We’ve had other contracts in and out in that time, some as soon as <i>days</i>.”
+        The moleskin beneath his fingers began to curl steam from its cool surface
+        and the stench of cooking leather began to build beneath his nose. “And yet
+        somehow a whole <i>GOT-DAMNED </i>team of professional body brokers can’t
+        find one bunny-man and his talkin’ toaster.”</p><p>Jason shifted his grip
+        on his own hands again. There was a dip in the man’s smile now. “To be fair,
+        sir, the ‘talking toaster’ as you’ve named it is strong, quick, and proficient
+        in the art of body guarding.” His eyes dipped towards the desk’s surface where
+        lines of char spread from Thomas’s fingers like black lightning. The room
+        flashed again as the storm outside continued to beat against the manor’s walls.
+        He returned his light, round eyes up to his boss’s face. “Everyone has met
+        their quotas, sir.” The smile, that little line of <b>suave</b> confidence,
+        curved again beneath Jason’s nose.</p><p><i>It’d be hard to smile through
+        a scar,</i> Thomas thought before he realized what he was thinking. He froze.
+        Crackling sounds were starting to come from the desk’s surface. He lifted
+        his fingers from the ruined blotter and sat back, willing the heat to recede
+        back into his core. He laced his fingers over his gut and turned to face back
+        out the windows. He could still feel the anger slithering and chafing inside,
+        begging for a physical release. He snorted as he examined the roiling sky
+        and its organic light show. “I want him found, bagged, and tagged, Jason.
+        With <i>prejudice</i> that would make my <i>ancestors</i> blush, is that clear?”</p><p>There
+        was a long pause. Thomas could only assume Jason was consulting something
+        on his phone before he responded. He was no doubt responding to the messages
+        that had led him to requesting this meeting. Thomas heard the little click
+        of the phone being locked before Jason asked, “They’ll need assurances that
+        no one will be fired simply because they fail one acquisition if their ledgers
+        are in the black, sir. Otherwise…”</p><p>Thomas nodded. The squirming, liquid
+        heat of his fire raged within him, aching to be released. His eyes darted
+        across the racing clouds above. “Fine. But I swear to the Lord above, Jason.
+        If I so much as sniff the color red in one of their books, the example set
+        by their dismissal will make last week’s bonfire seem like a snuffed-out match.”</p><p>“That’s
+        all they’ll need to hear, sir,” Jason agreed. “Good night, sir.” Thomas never
+        heard the small man get up or walk away. The only indication he had of the
+        assistant’s exit was the muted catch of the door in its frame.</p></p>\",\"content\":\"<p><h1>Monthly
+        Quota<br />#QuordlePrompt 20</h1><p>On my <a href=\\\"https://www.wattpad.com/1302750198-prompting-needed_-monthly-quota\\\"
+        target=\\\"_blank\\\">Wattpad</a>!</p><figure class=\\\"tmblr-full\\\"><img
+        src=\\\"https://64.media.tumblr.com/7e4dd56ff545b8f931a0255460132383/69b93ce02d1e2500-4a/s640x960/82541e5204d95da4d35e9658fb9cdd7f98949fc7.png\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>He noticed that his accent was
+        flowing particularly thick today. Each word swirled with Southern syrupiness
+        that sweetened the air before curling into the various mahogany surfaces.
+        &ldquo;That&rsquo;s the reason we <i>had</i> that chiseled into the <b><i>by</i>law</b>s,
+        Jason.&rdquo; Thomas swiveled in his chair and flashed his brightest grin
+        to the smaller, pale gentleman on the other side of the desk. The leather
+        of the chair creaked only slightly as the bearings in the base offered no
+        complaints to the shift of his weight. His fingers drummed on the wooden armrest.
+        The steady <i>tap-tap-tap&shy; </i>paired well with the beating of rain against
+        the windows behind him. Lightning flashed, and that spike of light coated
+        the room in a blue-white glare for a split second. A ghostly afterimage, like
+        a world only barely perceptible with the naked eye, lingered for a moment
+        before the dim incandescent bulbs reasserted the darkened office. And then
+        there was Jason.</p><p>Little, <b>pasty</b> Jason sat on the bare wooden bench
+        and looked up into Thomas&rsquo;s face with simple expectation. He had his
+        blazer folded on his knees with his hands laced on top. His white button-up
+        shirt was immaculately ironed, and the man&rsquo;s collar could cut hard cheese
+        without a fold. Thomas liked Jason. Well, maybe just a bit more than he could
+        like any of his supporting staff. That&rsquo;s why it angered him when Jason
+        asked questions that were rhetorical.</p><p>&ldquo;Every member of this&hellip;&rdquo;
+        Thomas twirled his hand as if stirring the ether, &ldquo;<i>organization</i>
+        needs to bring in their keep. Whether it&rsquo;s through the bounty channels
+        or through their own means, everyone <i>delivers</i>. If they don&rsquo;t
+        produce at least one fulfilled contract per month, they&rsquo;re out.&rdquo;</p><p>Jason
+        nodded and refolded his hands on his lap. &ldquo;Yes sir. No one is disputing
+        that, sir, but it&rsquo;s the matter of this <i>particular</i> contract-&rdquo;</p><p>In
+        contrast to Thomas&rsquo;s own voice, Jason&rsquo;s accent was as flat as
+        his shirt. Thomas steamrolled over it with a booming, &ldquo;You&rsquo;re
+        referring to the <i>half-bred</i>.&rdquo;</p><p>He scrutinized the little
+        man&rsquo;s face for a sign of being perturbed at the harsh way Thomas had
+        dropped the description from his mouth. It had plopped out like a slur. To
+        Jason&rsquo;s credit, he bore the term with little more than a <b>blink</b>,
+        and then nodded in agreement. Damn, but he was a good assistant.</p><p>&ldquo;Yes
+        sir, the half human, half Oryctolagus Cuniculus. Goes by the name of Nib.&rdquo;
+        Jason glanced off to the side. &ldquo;I&rsquo;m still a bit miffed that no
+        one has ascertained as to whether it&rsquo;s a code name or not.&rdquo; He
+        shook his head, and returned his smile towards Thomas who merely arched an
+        eyebrow. &ldquo;Our operatives have been delivering payloads regularly. Everyone
+        is on schedule.&rdquo;</p><p><i>Tap-tap-tap</i>. Thomas felt a heat build
+        up behind his eyes. <i>Tap-tap-tap.</i> He leaned forward, this time eliciting
+        a quiet groan of complaint from the chair beneath him. His fingers came together
+        in front of him and steepled below his chin. &ldquo;It&rsquo;s a game of numbahs.&rdquo;
+        He heard the word slip from him without an &lsquo;r&rsquo; on the end, but
+        the anger was superseding proper diction. &ldquo;We&rsquo;ve had the contract
+        for this mutated freak in our grasp for <i>five BLAZIN&rsquo; years</i>, Jason.&rdquo;
+        Thomas placed his hands on the blotter before him and mentally dared the other
+        man to flinch beneath his stare. Jason bore the heat with no outward adjustments.
+        &ldquo;We&rsquo;ve had other contracts in and out in that time, some as soon
+        as <i>days</i>.&rdquo; The moleskin beneath his fingers began to curl steam
+        from its cool surface and the stench of cooking leather began to build beneath
+        his nose. &ldquo;And yet somehow a whole <i>GOT-DAMNED </i>team of professional
+        body brokers can&rsquo;t find one bunny-man and his talkin&rsquo; toaster.&rdquo;</p><p>Jason
+        shifted his grip on his own hands again. There was a dip in the man&rsquo;s
+        smile now. &ldquo;To be fair, sir, the &lsquo;talking toaster&rsquo; as you&rsquo;ve
+        named it is strong, quick, and proficient in the art of body guarding.&rdquo;
+        His eyes dipped towards the desk&rsquo;s surface where lines of char spread
+        from Thomas&rsquo;s fingers like black lightning. The room flashed again as
+        the storm outside continued to beat against the manor&rsquo;s walls. He returned
+        his light, round eyes up to his boss&rsquo;s face. &ldquo;Everyone has met
+        their quotas, sir.&rdquo; The smile, that little line of <b>suave</b> confidence,
+        curved again beneath Jason&rsquo;s nose.</p><p><i>It&rsquo;d be hard to smile
+        through a scar,</i> Thomas thought before he realized what he was thinking.
+        He froze. Crackling sounds were starting to come from the desk&rsquo;s surface.
+        He lifted his fingers from the ruined blotter and sat back, willing the heat
+        to recede back into his core. He laced his fingers over his gut and turned
+        to face back out the windows. He could still feel the anger slithering and
+        chafing inside, begging for a physical release. He snorted as he examined
+        the roiling sky and its organic light show. &ldquo;I want him found, bagged,
+        and tagged, Jason. With <i>prejudice</i> that would make my <i>ancestors</i>
+        blush, is that clear?&rdquo;</p><p>There was a long pause. Thomas could only
+        assume Jason was consulting something on his phone before he responded. He
+        was no doubt responding to the messages that had led him to requesting this
+        meeting. Thomas heard the little click of the phone being locked before Jason
+        asked, &ldquo;They&rsquo;ll need assurances that no one will be fired simply
+        because they fail one acquisition if their ledgers are in the black, sir.
+        Otherwise&hellip;&rdquo;</p><p>Thomas nodded. The squirming, liquid heat of
+        his fire raged within him, aching to be released. His eyes darted across the
+        racing clouds above. &ldquo;Fine. But I swear to the Lord above, Jason. If
+        I so much as sniff the color red in one of their books, the example set by
+        their dismissal will make last week&rsquo;s bonfire seem like a snuffed-out
+        match.&rdquo;</p><p>&ldquo;That&rsquo;s all they&rsquo;ll need to hear, sir,&rdquo;
+        Jason agreed. &ldquo;Good night, sir.&rdquo; Thomas never heard the small
+        man get up or walk away. The only indication he had of the assistant&rsquo;s
+        exit was the muted catch of the door in its frame.</p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"headphonesthoughts\",\"blog\":{\"name\":\"headphonesthoughts\",\"title\":\"HeadphonesThoughts\",\"description\":\"<p>A
+        simple blogger who is constantly lost in their thoughts. www.headphonesthougths.com</p><p>email:
+        contact@headphonesthoughts.com</p>\",\"url\":\"https://headphonesthoughts.tumblr.com/\",\"uuid\":\"t:ED4JLve4zhxNlq2r9ywaVg\",\"updated\":1673550083,\"tumblrmart_accessories\":{}},\"id\":706268452229464064,\"id_string\":\"706268452229464064\",\"post_url\":\"https://headphonesthoughts.tumblr.com/post/706268452229464064\",\"slug\":\"\",\"date\":\"2023-01-12
+        19:01:23 GMT\",\"timestamp\":1673550083,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"iQ96a8z1\",\"tags\":[\"blog\",\"blogging\",\"writer\",\"quoteoftheday\",\"quote\",\"blogger\",\"mental
+        health\",\"quotes\",\"motivating quotes\",\"life quote of the day\"],\"short_url\":\"https://tmblr.co/ZN4oMUdDAsfJCy00\",\"summary\":\"\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1029\\\"
+        data-orig-width=\\\"1170\\\"><img src=\\\"https://64.media.tumblr.com/50e02867bc64e4c6490d1e0ebf8d4892/fbacf42fe0ed44a2-7e/s640x960/1e5faecbdfb4d5c3cf0c8c47687a2b71a10909bc.jpg\\\"
+        data-orig-height=\\\"1029\\\" data-orig-width=\\\"1170\\\"/></figure></div>\",\"reblog\":{\"comment\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1029\\\"
+        data-orig-width=\\\"1170\\\"><img src=\\\"https://64.media.tumblr.com/50e02867bc64e4c6490d1e0ebf8d4892/fbacf42fe0ed44a2-7e/s640x960/1e5faecbdfb4d5c3cf0c8c47687a2b71a10909bc.jpg\\\"
+        data-orig-height=\\\"1029\\\" data-orig-width=\\\"1170\\\"></figure></div></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"headphonesthoughts\",\"active\":true,\"theme\":{\"header_full_width\":854,\"header_full_height\":640,\"avatar_shape\":\"square\",\"background_color\":\"#FFFFFF\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/b4dacfc9e70826c60d1d1afc995bf7b3/2a25095c8ee43933-59/s854x640/29a6157f24e54384ed3efd20cd4600990efbb991.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/b4dacfc9e70826c60d1d1afc995bf7b3/2a25095c8ee43933-59/s2048x3072/e1632af2a4ed3b12efad2f1a087cc26e16402486.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/b4dacfc9e70826c60d1d1afc995bf7b3/2a25095c8ee43933-59/s2048x3072/e1632af2a4ed3b12efad2f1a087cc26e16402486.jpg\",\"header_stretch\":true,\"link_color\":\"#00B8FF\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706268452229464064\"},\"content_raw\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1029\\\"
+        data-orig-width=\\\"1170\\\"><img src=\\\"https://64.media.tumblr.com/50e02867bc64e4c6490d1e0ebf8d4892/fbacf42fe0ed44a2-7e/s640x960/1e5faecbdfb4d5c3cf0c8c47687a2b71a10909bc.jpg\\\"
+        data-orig-height=\\\"1029\\\" data-orig-width=\\\"1170\\\"></figure></div></p>\",\"content\":\"<p><figure
+        class=\\\"tmblr-full\\\"><img src=\\\"https://64.media.tumblr.com/50e02867bc64e4c6490d1e0ebf8d4892/fbacf42fe0ed44a2-7e/s640x960/1e5faecbdfb4d5c3cf0c8c47687a2b71a10909bc.jpg\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"mrnotsosilent\",\"blog\":{\"name\":\"mrnotsosilent\",\"title\":\"the
+        boy's name sounds like veins\",\"description\":\"the boy is prolly just here
+        to share his thoughts and random posts\",\"url\":\"https://www.tumblr.com/blog/view/mrnotsosilent\",\"uuid\":\"t:K--Hq30OI5DIaY1YB2IzMg\",\"updated\":1673549999,\"tumblrmart_accessories\":{}},\"id\":706268364049383424,\"id_string\":\"706268364049383424\",\"post_url\":\"https://www.tumblr.com/blog/view/mrnotsosilent/706268364049383424\",\"slug\":\"it-is-good-to-talk-to-someone-to-whom-you-will-not\",\"date\":\"2023-01-12
+        18:59:59 GMT\",\"timestamp\":1673549999,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"VUgjwVbc\",\"tags\":[\"literature\",\"creative
+        writing\",\"writing community\",\"writer\"],\"short_url\":\"https://tmblr.co/ZPEWifdDArNBGe00\",\"summary\":\"It
+        is good to talk to someone to whom you will not explain yourself.\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p
+        class=\\\"npf_quote\\\">It is good to talk to someone to whom you will not
+        explain yourself.</p>\",\"reblog\":{\"comment\":\"<p class=\\\"npf_quote\\\">It
+        is good to talk to someone to whom you will not explain yourself.</p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"mrnotsosilent\",\"active\":true,\"theme\":{\"header_full_width\":4608,\"header_full_height\":3456,\"avatar_shape\":\"square\",\"background_color\":\"#222222\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/12ebef93fa6bb15d7830bc8c8c7b31ce/5da0da703e44a300-46/s4608x3456/87f3d10e5d42a08a9e843d9c82715a5d854be053.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/12ebef93fa6bb15d7830bc8c8c7b31ce/5da0da703e44a300-46/s2048x3072/448477b497edb317e3cb3c868f65d103bdf72d41.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/12ebef93fa6bb15d7830bc8c8c7b31ce/5da0da703e44a300-46/s2048x3072/448477b497edb317e3cb3c868f65d103bdf72d41.jpg\",\"header_stretch\":true,\"link_color\":\"#000000\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#FFFFFF\",\"title_font\":\"Calluna\",\"title_font_weight\":\"regular\"},\"share_likes\":false,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706268364049383424\"},\"content_raw\":\"<p
+        class=\\\"npf_quote\\\">It is good to talk to someone to whom you will not
+        explain yourself.</p>\",\"content\":\"<p class=\\\"npf_quote\\\">It is good
+        to talk to someone to whom you will not explain yourself.</p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"culturedbeasts\",\"blog\":{\"name\":\"culturedbeasts\",\"title\":\"Cultured
+        Beasts\",\"description\":\"anthro literature\",\"url\":\"https://www.tumblr.com/blog/view/culturedbeasts\",\"uuid\":\"t:0wCtdYsLxbGKtX3qGQtHYg\",\"updated\":1673547321,\"tumblrmart_accessories\":{}},\"id\":706265556382334976,\"id_string\":\"706265556382334976\",\"post_url\":\"https://www.tumblr.com/blog/view/culturedbeasts/706265556382334976\",\"slug\":\"read-chapter-2-of-our-new-scifi-mystery-romance\",\"date\":\"2023-01-12
+        18:15:21 GMT\",\"timestamp\":1673547321,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"SgMaszQw\",\"tags\":[\"writer\",\"furry
+        fiction\",\"furry\",\"furry series\",\"publisher\"],\"short_url\":\"https://tmblr.co/ZfIi8RdDACWLGq00\",\"summary\":\"Read
+        Chapter 2 of our new Scifi Mystery Romance series for FREE at https://culturedbeasts.com/chapter-2-aries/\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":1,\"title\":\"\",\"body\":\"<div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"890\\\"
+        data-orig-width=\\\"1966\\\"><img src=\\\"https://64.media.tumblr.com/10f56c3a4589970c9a3c510302cb055c/f4e311e5d407c4fb-10/s640x960/0bf809aa1bd49a188bb77de64c852e6cafd6e47d.png\\\"
+        data-orig-height=\\\"890\\\" data-orig-width=\\\"1966\\\"/></figure></div><p>Read
+        Chapter 2 of our new Scifi Mystery Romance series for FREE at <a href=\\\"https://culturedbeasts.com/chapter-2-aries/\\\">https://culturedbeasts.com/chapter-2-aries/</a></p>\",\"reblog\":{\"comment\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"890\\\"
+        data-orig-width=\\\"1966\\\"><img src=\\\"https://64.media.tumblr.com/10f56c3a4589970c9a3c510302cb055c/f4e311e5d407c4fb-10/s640x960/0bf809aa1bd49a188bb77de64c852e6cafd6e47d.png\\\"
+        data-orig-height=\\\"890\\\" data-orig-width=\\\"1966\\\"></figure></div><p>Read
+        Chapter 2 of our new Scifi Mystery Romance series for FREE at <a href=\\\"https://culturedbeasts.com/chapter-2-aries/\\\">https://culturedbeasts.com/chapter-2-aries/</a></p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"culturedbeasts\",\"active\":true,\"theme\":{\"header_full_width\":1366,\"header_full_height\":768,\"header_focus_width\":1366,\"header_focus_height\":768,\"avatar_shape\":\"circle\",\"background_color\":\"#222222\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/76bb84464566df6fab6c0898a44f7141/9df987dd9e8c66bf-7e/s1366x768/c973606369c49eebe2bc1bd10bfd24bf9f39ed6f.png\",\"header_image_focused\":\"https://64.media.tumblr.com/76bb84464566df6fab6c0898a44f7141/9df987dd9e8c66bf-7e/s2048x3072/05fc4cd7444ef9823b4ae211461f6491826a68c2.png\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/76bb84464566df6fab6c0898a44f7141/9df987dd9e8c66bf-7e/s2048x3072/05fc4cd7444ef9823b4ae211461f6491826a68c2.png\",\"header_stretch\":true,\"link_color\":\"#F3A757\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#CCCCCC\",\"title_font\":\"Sans
+        Serif\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706265556382334976\"},\"content_raw\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"890\\\"
+        data-orig-width=\\\"1966\\\"><img src=\\\"https://64.media.tumblr.com/10f56c3a4589970c9a3c510302cb055c/f4e311e5d407c4fb-10/s640x960/0bf809aa1bd49a188bb77de64c852e6cafd6e47d.png\\\"
+        data-orig-height=\\\"890\\\" data-orig-width=\\\"1966\\\"></figure></div><p>Read
+        Chapter 2 of our new Scifi Mystery Romance series for FREE at <a href=\\\"https://culturedbeasts.com/chapter-2-aries/\\\">https://culturedbeasts.com/chapter-2-aries/</a></p></p>\",\"content\":\"<p><figure
+        class=\\\"tmblr-full\\\"><img src=\\\"https://64.media.tumblr.com/10f56c3a4589970c9a3c510302cb055c/f4e311e5d407c4fb-10/s640x960/0bf809aa1bd49a188bb77de64c852e6cafd6e47d.png\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>Read Chapter 2 of our new Scifi
+        Mystery Romance series for FREE at <a href=\\\"https://culturedbeasts.com/chapter-2-aries/\\\">https://culturedbeasts.com/chapter-2-aries/</a></p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"rottenteethkids\",\"blog\":{\"name\":\"rottenteethkids\",\"title\":\"Cavdoesthingsig\",\"description\":\"He/xe,
+        Cavity/Eclipse, I doodle and love writing [smile]\",\"url\":\"https://www.tumblr.com/blog/view/rottenteethkids\",\"uuid\":\"t:g69aKFP7M6EMbaVkD-afHA\",\"updated\":1673546277,\"tumblrmart_accessories\":{}},\"id\":706264461936410624,\"id_string\":\"706264461936410624\",\"post_url\":\"https://www.tumblr.com/blog/view/rottenteethkids/706264461936410624\",\"slug\":\"now-that-the-ride-the-cyclone-fandom-is-dying\",\"date\":\"2023-01-12
+        17:57:57 GMT\",\"timestamp\":1673546277,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"zeSxguFt\",\"tags\":[\"ride
+        the cyclone\",\"rtc\",\"rtc musical\",\"ride the cyclone musical\",\"writer\",\"fan
+        writing\",\"rtc fanfic\",\"author\",\"novelist\",\"random\",\"do you guys
+        actually want to hear about my book though?\"],\"short_url\":\"https://tmblr.co/ZaZVxTdD9yb3Cy00\",\"summary\":\"Now
+        that the ride the cyclone fandom is dying ( *sniff* :( ) \\nI'm going to turn
+        my deleted ride the cyclone fic that had exactly...\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":2,\"title\":\"\",\"body\":\"<p>Now
+        that the ride the cyclone fandom is dying ( *sniff* :( ) </p><p>I&rsquo;m
+        going to turn my deleted ride the cyclone fic that had exactly 2 bookmarks
+        and 21 kudos into an actual book and in the upcoming years when I finally
+        finish and publish, with the hopes of popularity, at least one person will
+        sit down, read it, and remember a faded memory of that one musical fan fiction
+        they read so long ago and think, &ldquo;Huh, What a coincidence.&rdquo; </p><p>In
+        their efforts to find it, it will be gone, long deleted. They won&rsquo;t
+        remember every detail, they might even crave more information. </p><p>If they&rsquo;re
+        really passionate, they might even get ahold of my socials and message me,
+        asking &ldquo;hey, did you used to write ride the cyclone fanfiction?&rdquo;</p><p>And
+        in embarrassment, I&rsquo;ll reject the claim, and they&rsquo;ll sit back
+        and think they made it all up. </p><p>:) </p>\",\"reblog\":{\"comment\":\"<p>Now
+        that the ride the cyclone fandom is dying ( *sniff* :( ) </p><p>I’m going
+        to turn my deleted ride the cyclone fic that had exactly 2 bookmarks and 21
+        kudos into an actual book and in the upcoming years when I finally finish
+        and publish, with the hopes of popularity, at least one person will sit down,
+        read it, and remember a faded memory of that one musical fan fiction they
+        read so long ago and think, “Huh, What a coincidence.” </p><p>In their efforts
+        to find it, it will be gone, long deleted. They won’t remember every detail,
+        they might even crave more information. </p><p>If they’re really passionate,
+        they might even get ahold of my socials and message me, asking “hey, did you
+        used to write ride the cyclone fanfiction?”</p><p>And in embarrassment, I’ll
+        reject the claim, and they’ll sit back and think they made it all up. </p><p>:)
+        </p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"rottenteethkids\",\"active\":true,\"theme\":{\"header_full_width\":638,\"header_full_height\":212,\"header_focus_width\":377,\"header_focus_height\":211,\"avatar_shape\":\"circle\",\"background_color\":\"#347153\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"0,507,211,130\",\"header_image\":\"https://64.media.tumblr.com/decc0eb9bbd3cb787a3bd55bf6d31daf/5525c2fe83946143-c4/s638x212/9850e102882eff5c30249c8d2d85f96cdfa2c7ee.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/decc0eb9bbd3cb787a3bd55bf6d31daf/5525c2fe83946143-c4/s2048x3072_c20376,0,79467,99528/93881b1e26653f320883f39f0dfe9d65413ba815.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/decc0eb9bbd3cb787a3bd55bf6d31daf/5525c2fe83946143-c4/s2048x3072/8112eda671fd83c43f31ba9c03038762bbc081ce.jpg\",\"header_stretch\":true,\"link_color\":\"#45966e\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#bbe4d0\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706264461936410624\"},\"content_raw\":\"<p>Now
+        that the ride the cyclone fandom is dying ( *sniff* :( ) </p><p>I’m going
+        to turn my deleted ride the cyclone fic that had exactly 2 bookmarks and 21
+        kudos into an actual book and in the upcoming years when I finally finish
+        and publish, with the hopes of popularity, at least one person will sit down,
+        read it, and remember a faded memory of that one musical fan fiction they
+        read so long ago and think, “Huh, What a coincidence.” </p><p>In their efforts
+        to find it, it will be gone, long deleted. They won’t remember every detail,
+        they might even crave more information. </p><p>If they’re really passionate,
+        they might even get ahold of my socials and message me, asking “hey, did you
+        used to write ride the cyclone fanfiction?”</p><p>And in embarrassment, I’ll
+        reject the claim, and they’ll sit back and think they made it all up. </p><p>:)
+        </p>\",\"content\":\"<p>Now that the ride the cyclone fandom is dying ( *sniff*
+        :( ) </p><p>I&rsquo;m going to turn my deleted ride the cyclone fic that had
+        exactly 2 bookmarks and 21 kudos into an actual book and in the upcoming years
+        when I finally finish and publish, with the hopes of popularity, at least
+        one person will sit down, read it, and remember a faded memory of that one
+        musical fan fiction they read so long ago and think, &ldquo;Huh, What a coincidence.&rdquo;
+        </p><p>In their efforts to find it, it will be gone, long deleted. They won&rsquo;t
+        remember every detail, they might even crave more information. </p><p>If they&rsquo;re
+        really passionate, they might even get ahold of my socials and message me,
+        asking &ldquo;hey, did you used to write ride the cyclone fanfiction?&rdquo;</p><p>And
+        in embarrassment, I&rsquo;ll reject the claim, and they&rsquo;ll sit back
+        and think they made it all up. </p><p>:) </p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"artemisneardos\",\"blog\":{\"name\":\"artemisneardos\",\"title\":\"Artemis_Neardos\",\"description\":\"\",\"url\":\"https://www.tumblr.com/blog/view/artemisneardos\",\"uuid\":\"t:EflJeBUuNTX_vs4K5rsRpw\",\"updated\":1673545976,\"tumblrmart_accessories\":{}},\"id\":706264145741365250,\"id_string\":\"706264145741365250\",\"post_url\":\"https://www.tumblr.com/blog/view/artemisneardos/706264145741365250\",\"slug\":\"me-writing-for-jedimando-ghost-leaning\",\"date\":\"2023-01-12
+        17:52:56 GMT\",\"timestamp\":1673545976,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"gC5sqO3R\",\"tags\":[\"fanfiction\",\"ao3\",\"writer\",\"writer
+        problems\",\"ghost x soap\",\"im so tired\"],\"short_url\":\"https://tmblr.co/Z0vxTgdD9t_aWa02\",\"summary\":\"Me:
+        -writing for 'Jedi&Mando'-...\\nGhost: -leaning on the back of my chair- \\\"Artemis,
+        love.\\\"\\nMe: -continues writing- \\\"Yea, big...\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p>Me:
+        -writing for &lsquo;Jedi&amp;Mando&rsquo;-&hellip;</p><p>Ghost: -leaning on
+        the back of my chair- &ldquo;Artemis, love.&rdquo;</p><p>Me: -continues writing-
+        &ldquo;Yea, big man?&rdquo;</p><p>Ghost: &ldquo;I have more ideas for 'Mine&amp;Yours&rsquo;&rdquo;</p><p>Me:
+        -sigh- &ldquo;Fine&rdquo; -opens the notes doc for the series- &ldquo;make
+        it quick please.&rdquo;</p><p>Ghost: &ldquo;It won&rsquo;t be.&quot;\U0001F608</p><p>Me:
+        -big sigh-</p><p>Soap: \U0001F607</p>\",\"reblog\":{\"comment\":\"<p>Me: -writing
+        for ‘Jedi&amp;Mando’-…</p><p>Ghost: -leaning on the back of my chair- “Artemis,
+        love.”</p><p>Me: -continues writing- “Yea, big man?”</p><p>Ghost: “I have
+        more ideas for 'Mine&amp;Yours’”</p><p>Me: -sigh- “Fine” -opens the notes
+        doc for the series- “make it quick please.”</p><p>Ghost: “It won’t be.\\\"\U0001F608</p><p>Me:
+        -big sigh-</p><p>Soap: \U0001F607</p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"artemisneardos\",\"active\":true,\"theme\":{\"header_full_width\":2268,\"header_full_height\":2835,\"avatar_shape\":\"square\",\"background_color\":\"#1BD7C4\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/647c31abc796bc48cca5a137f6e26f31/780fa5a11ee07a44-08/s2268x2835/bee78c3e7e87d085edc2dc7a02bd25af1bcbefb5.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/647c31abc796bc48cca5a137f6e26f31/780fa5a11ee07a44-08/s2048x3072/d5a46ff814aa017595c3fd2fe367eaf153634827.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/647c31abc796bc48cca5a137f6e26f31/780fa5a11ee07a44-08/s2048x3072/d5a46ff814aa017595c3fd2fe367eaf153634827.jpg\",\"header_stretch\":true,\"link_color\":\"#000000\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Sans
+        Serif\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706264145741365250\"},\"content_raw\":\"<p>Me:
+        -writing for ‘Jedi&amp;Mando’-…</p><p>Ghost: -leaning on the back of my chair-
+        “Artemis, love.”</p><p>Me: -continues writing- “Yea, big man?”</p><p>Ghost:
+        “I have more ideas for 'Mine&amp;Yours’”</p><p>Me: -sigh- “Fine” -opens the
+        notes doc for the series- “make it quick please.”</p><p>Ghost: “It won’t be.\\\"\U0001F608</p><p>Me:
+        -big sigh-</p><p>Soap: \U0001F607</p>\",\"content\":\"<p>Me: -writing for
+        &lsquo;Jedi&amp;Mando&rsquo;-&hellip;</p><p>Ghost: -leaning on the back of
+        my chair- &ldquo;Artemis, love.&rdquo;</p><p>Me: -continues writing- &ldquo;Yea,
+        big man?&rdquo;</p><p>Ghost: &ldquo;I have more ideas for 'Mine&amp;Yours&rsquo;&rdquo;</p><p>Me:
+        -sigh- &ldquo;Fine&rdquo; -opens the notes doc for the series- &ldquo;make
+        it quick please.&rdquo;</p><p>Ghost: &ldquo;It won&rsquo;t be.\\\"&#128520;</p><p>Me:
+        -big sigh-</p><p>Soap: &#128519;</p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"5lilducks\",\"blog\":{\"name\":\"5lilducks\",\"title\":\"Dewie\",\"description\":\"<p>23</p><p>[-o-]</p><p>They/He</p>\",\"url\":\"https://5lilducks.tumblr.com/\",\"uuid\":\"t:bU0sfP5LkdDiHRjxbKrtkQ\",\"updated\":1673544867,\"tumblrmart_accessories\":{}},\"id\":706262808442126336,\"id_string\":\"706262808442126336\",\"post_url\":\"https://5lilducks.tumblr.com/post/706262808442126336/ok-but-i-love-thesaurus-for-two-reasons-1-im-a\",\"slug\":\"ok-but-i-love-thesaurus-for-two-reasons-1-im-a\",\"date\":\"2023-01-12
+        17:31:41 GMT\",\"timestamp\":1673544701,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"asu3dwLz\",\"tags\":[\"I
+        maybe autistic\",\"i try not to think about it too much\",\"writing\",\"writer\",\"text\"],\"short_url\":\"https://tmblr.co/ZJbP_jdD9aX7Gq00\",\"summary\":\"Ok
+        but I love thesaurus for two reasons: \\n1. I’m a writer with a shitty memory\\n2.
+        It sounds like a dinosaur which is instant...\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p>Ok
+        but I love thesaurus for two reasons: </p><p>1. I’m a writer with a shitty
+        memory</p><p>2. It sounds like a dinosaur which is instant serotonin</p>\",\"reblog\":{\"comment\":\"<p>Ok
+        but I love thesaurus for two reasons: </p><p>1. I’m a writer with a shitty
+        memory</p><p>2. It sounds like a dinosaur which is instant serotonin</p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"5lilducks\",\"active\":true,\"theme\":{\"header_full_width\":483,\"header_full_height\":360,\"header_focus_width\":483,\"header_focus_height\":271,\"avatar_shape\":\"circle\",\"background_color\":\"#000000\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"3,483,274,0\",\"header_image\":\"https://static.tumblr.com/39304b9248d2af1b85edbb49490b9447/knduocm/33Rprfybw/tumblr_static_.jpg\",\"header_image_focused\":\"https://static.tumblr.com/fb8915703fcc3bca3f049e9b7bb0fcbb/knduocm/2qzprfybx/tumblr_static_tumblr_static__focused_v3.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://static.tumblr.com/39304b9248d2af1b85edbb49490b9447/knduocm/33Rprfybw/tumblr_static__2048_v2.jpg\",\"header_stretch\":true,\"link_color\":\"#ffd900\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#C50080\",\"title_font\":\"Calluna\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706262808442126336\"},\"content_raw\":\"<p>Ok
+        but I love thesaurus for two reasons: </p><p>1. I’m a writer with a shitty
+        memory</p><p>2. It sounds like a dinosaur which is instant serotonin</p>\",\"content\":\"<p>Ok
+        but I love thesaurus for two reasons: </p><p>1. I&rsquo;m a writer with a
+        shitty memory</p><p>2. It sounds like a dinosaur which is instant serotonin</p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"ejmjr\",\"blog\":{\"name\":\"ejmjr\",\"title\":\"EJMJr\",\"description\":\"\",\"url\":\"https://www.tumblr.com/blog/view/ejmjr\",\"uuid\":\"t:05lq1040eKqWlSsdOwLfPA\",\"updated\":1673543877,\"tumblrmart_accessories\":{}},\"id\":706261945174671360,\"id_string\":\"706261945174671360\",\"post_url\":\"https://www.tumblr.com/blog/view/ejmjr/706261945174671360\",\"slug\":\"new-year-season-5-by-elroy-martinez-jr-podcast\",\"date\":\"2023-01-12
+        17:17:57 GMT\",\"timestamp\":1673543877,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"lY8ndEEI\",\"tags\":[\"nyc\",\"actor\",\"film\",\"producer\",\"writer\",\"art\",\"artist\",\"shortfilm\",\"filmlife\",\"podcast\"],\"short_url\":\"https://tmblr.co/ZzFySadD9Nz8Wq00\",\"summary\":\"New
+        Year Season 5! by Elroy Martinez Jr. Podcast\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p
+        class=\\\"npf_link\\\" data-npf='{\\\"type\\\":\\\"link\\\",\\\"url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"display_url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"title\\\":\\\"New
+        Year Season 5! by Elroy Martinez Jr. Podcast\\\",\\\"description\\\":\\\"Happy
+        New Year! This is season 5! Have a listen!\\\",\\\"site_name\\\":\\\"Anchor\\\",\\\"poster\\\":[{\\\"media_key\\\":\\\"a70d37f3c9825706f29d6b36ff7db827:2df5319a5d0a99c7-f6\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":400,\\\"height\\\":400}]}'><a
+        href=\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\"
+        target=\\\"_blank\\\">New Year Season 5! by Elroy Martinez Jr. Podcast</a></p>\",\"reblog\":{\"comment\":\"<p
+        class=\\\"npf_link\\\" data-npf='{\\\"type\\\":\\\"link\\\",\\\"url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"display_url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"title\\\":\\\"New
+        Year Season 5! by Elroy Martinez Jr. Podcast\\\",\\\"description\\\":\\\"Happy
+        New Year! This is season 5! Have a listen!\\\",\\\"site_name\\\":\\\"Anchor\\\",\\\"poster\\\":[{\\\"media_key\\\":\\\"a70d37f3c9825706f29d6b36ff7db827:2df5319a5d0a99c7-f6\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":400,\\\"height\\\":400}]}'><a
+        href=\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\"
+        target=\\\"_blank\\\">New Year Season 5! by Elroy Martinez Jr. Podcast</a></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"ejmjr\",\"active\":true,\"theme\":{\"header_full_width\":1233,\"header_full_height\":544,\"header_focus_width\":764,\"header_focus_height\":430,\"avatar_shape\":\"circle\",\"background_color\":\"#000000\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"57,999,487,235\",\"header_image\":\"https://static.tumblr.com/7a29a994e8485da89a71637412de2bfb/pihi2ex/Wdmp6cjji/tumblr_static_.jpg\",\"header_image_focused\":\"https://static.tumblr.com/7a29a994e8485da89a71637412de2bfb/pihi2ex/NBXp6cjjj/tumblr_static_tumblr_static__focused_v3.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://static.tumblr.com/7a29a994e8485da89a71637412de2bfb/pihi2ex/Wdmp6cjji/tumblr_static__2048_v2.jpg\",\"header_stretch\":true,\"link_color\":\"#00B8FF\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#FFFFFF\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706261945174671360\"},\"content_raw\":\"<p
+        class=\\\"npf_link\\\" data-npf='{\\\"type\\\":\\\"link\\\",\\\"url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"display_url\\\":\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\",\\\"title\\\":\\\"New
+        Year Season 5! by Elroy Martinez Jr. Podcast\\\",\\\"description\\\":\\\"Happy
+        New Year! This is season 5! Have a listen!\\\",\\\"site_name\\\":\\\"Anchor\\\",\\\"poster\\\":[{\\\"media_key\\\":\\\"a70d37f3c9825706f29d6b36ff7db827:2df5319a5d0a99c7-f6\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":400,\\\"height\\\":400}]}'><a
+        href=\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\"
+        target=\\\"_blank\\\">New Year Season 5! by Elroy Martinez Jr. Podcast</a></p>\",\"content\":\"<p
+        class=\\\"npf_link\\\" data-npf=\\\"{&quot;type&quot;:&quot;link&quot;,&quot;url&quot;:&quot;https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal&quot;,&quot;display_url&quot;:&quot;https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal&quot;,&quot;title&quot;:&quot;New
+        Year Season 5! by Elroy Martinez Jr. Podcast&quot;,&quot;description&quot;:&quot;Happy
+        New Year! This is season 5! Have a listen!&quot;,&quot;site_name&quot;:&quot;Anchor&quot;,&quot;poster&quot;:[{&quot;media_key&quot;:&quot;a70d37f3c9825706f29d6b36ff7db827:2df5319a5d0a99c7-f6&quot;,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;width&quot;:400,&quot;height&quot;:400}]}\\\"><a
+        href=\\\"https://href.li/?https://anchor.fm/elroy-martinez-jr/episodes/New-Year-Season-5-e1tckal\\\"
+        target=\\\"_blank\\\">New Year Season 5! by Elroy Martinez Jr. Podcast</a></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"photo\",\"is_blocks_post_format\":false,\"blog_name\":\"iagofficial101\",\"blog\":{\"name\":\"iagofficial101\",\"title\":\"Isabella
+        Aguilera-Guerra\",\"description\":\"<p>Hi, my name is Isabella! Thank you
+        for checking out my blog! I write from experiences, and feelings. If you're
+        going through stuff, you're not alone!\U0001F60A https://iagofficial.blogspot.com/?m=1</p>\",\"url\":\"https://www.tumblr.com/blog/view/iagofficial101\",\"uuid\":\"t:9n7cNzl3u8PXBmxfkUztSg\",\"updated\":1673543550,\"tumblrmart_accessories\":{}},\"id\":706261601751334912,\"id_string\":\"706261601751334912\",\"post_url\":\"https://www.tumblr.com/blog/view/iagofficial101/706261601751334912\",\"slug\":\"perfect-mind-game-is-on-blog-now-link-in-bio\",\"date\":\"2023-01-12
+        17:12:29 GMT\",\"timestamp\":1673543549,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"ybVGDs10\",\"tags\":[\"writing\",\"writersofinstagram\",\"writer\",\"poetry\",\"ourstories\",\"quotes\",\"writingcommunity\",\"poetrycommunity\",\"poetsofinstagram\",\"poem\",\"writerscommunity\",\"poems\",\"writers\",\"writersofig\",\"poet\",\"words\",\"art\",\"reading\",\"author\",\"wordporn\",\"life\",\"write\",\"books\",\"fallinlove\",\"writerslife\",\"creativewriting\",\"quote\",\"quoteoftheday\",\"inspiration\",\"crush\"],\"short_url\":\"https://tmblr.co/ZRlqNSdD9IzIum00\",\"summary\":\"“Perfect
+        Mind Game” is on blog now! Link in bio! #writing #writersofinstagram #writer
+        #poetry #ourstories #quotes...\",\"should_open_in_legacy\":true,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"caption\":\"<p>“Perfect
+        Mind Game” is on blog now! Link in bio! #writing #writersofinstagram #writer
+        #poetry #ourstories #quotes #writingcommunity #poetrycommunity #poetsofinstagram
+        #poem #writerscommunity #poems #writers #writersofig #poet #words #art #reading
+        #author #wordporn #life #write #books #fallinlove #writerslife #creativewriting
+        #quote #quoteoftheday #inspiration #crush<br/>\\n<a href=\\\"https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=</a></p>\",\"reblog\":{\"comment\":\"<p>“Perfect
+        Mind Game” is on blog now! Link in bio! #writing #writersofinstagram #writer
+        #poetry #ourstories #quotes #writingcommunity #poetrycommunity #poetsofinstagram
+        #poem #writerscommunity #poems #writers #writersofig #poet #words #art #reading
+        #author #wordporn #life #write #books #fallinlove #writerslife #creativewriting
+        #quote #quoteoftheday #inspiration #crush<br><a href=\\\"https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=</a></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"iagofficial101\",\"active\":true,\"theme\":{\"header_full_width\":1080,\"header_full_height\":1080,\"header_focus_width\":944,\"header_focus_height\":531,\"avatar_shape\":\"circle\",\"background_color\":\"#B11600\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"289,1021,820,77\",\"header_image\":\"https://64.media.tumblr.com/cdfa0230d340368968f692b9c77f7b5b/010999d5b23b730d-f2/s1080x1080/481619b8688244c24a51d2c3927fd2f689b76c4d.png\",\"header_image_focused\":\"https://64.media.tumblr.com/cdfa0230d340368968f692b9c77f7b5b/010999d5b23b730d-f2/s2048x3072_c7130,26759,94537,75926/513b5c4ca83ec06eb609f2fa72c6f315fff120de.png\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/cdfa0230d340368968f692b9c77f7b5b/010999d5b23b730d-f2/s2048x3072/984447e18aa77ca33896c0a791fd536a2ee03f4b.png\",\"header_stretch\":true,\"link_color\":\"#000000\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706261601751334912\"},\"content_raw\":\"<p>“Perfect
+        Mind Game” is on blog now! Link in bio! #writing #writersofinstagram #writer
+        #poetry #ourstories #quotes #writingcommunity #poetrycommunity #poetsofinstagram
+        #poem #writerscommunity #poems #writers #writersofig #poet #words #art #reading
+        #author #wordporn #life #write #books #fallinlove #writerslife #creativewriting
+        #quote #quoteoftheday #inspiration #crush<br><a href=\\\"https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=</a></p>\",\"content\":\"<p>&ldquo;Perfect
+        Mind Game&rdquo; is on blog now! Link in bio! #writing #writersofinstagram
+        #writer #poetry #ourstories #quotes #writingcommunity #poetrycommunity #poetsofinstagram
+        #poem #writerscommunity #poems #writers #writersofig #poet #words #art #reading
+        #author #wordporn #life #write #books #fallinlove #writerslife #creativewriting
+        #quote #quoteoftheday #inspiration #crush<br /><a href=\\\"https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=</a></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"link_url\":\"https://www.instagram.com/p/CnUrOvJOfWh/?igshid=NGJjMDIxMWI=\",\"image_permalink\":\"https://iagofficial101.tumblr.com/image/706261601751334912\",\"photos\":[{\"caption\":\"\",\"original_size\":{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s1280x1920/c174acee3d1224dc1fe722d78e9956c919e7c663.jpg\",\"width\":1080,\"height\":1080},\"alt_sizes\":[{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s1280x1920/c174acee3d1224dc1fe722d78e9956c919e7c663.jpg\",\"width\":1080,\"height\":1080},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s640x960/6ee131f6b8507b39ea8a113c190588bcc991dbf7.jpg\",\"width\":640,\"height\":640},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s540x810/3cebb78bde1426b104e00fe0f6af8de5514818a9.jpg\",\"width\":540,\"height\":540},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s500x750/a393b9063cb32940fe7935eab4afc0fe14328b4c.jpg\",\"width\":500,\"height\":500},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s400x600/3b315902f50454198cc12070e01d218ed62df21e.jpg\",\"width\":400,\"height\":400},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s250x400/42064a6a85ea66b6d2e73f6c320778e30fa8bf47.jpg\",\"width\":250,\"height\":250},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s100x200/7712bdf9f6fb2bf2f371a553a328af98f8d11386.jpg\",\"width\":100,\"height\":100},{\"url\":\"https://64.media.tumblr.com/e7363304d591266c3177a0f595cc91ba/3df8759184be94f0-42/s75x75_c1/ec43f57a320822731bfc82a3f0ca34b87157bf3d.jpg\",\"width\":75,\"height\":75}]}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"photo\",\"is_blocks_post_format\":false,\"blog_name\":\"icouldnthelpbutremember\",\"blog\":{\"name\":\"icouldnthelpbutremember\",\"title\":\"Untitled\",\"description\":\"\",\"url\":\"https://www.tumblr.com/blog/view/icouldnthelpbutremember\",\"uuid\":\"t:3b-OPFgm9t5uYvHCH5lxAQ\",\"updated\":1673547872,\"tumblrmart_accessories\":{}},\"id\":706261546137976832,\"id_string\":\"706261546137976832\",\"post_url\":\"https://www.tumblr.com/blog/view/icouldnthelpbutremember/706261546137976832\",\"slug\":\"writersofinstagram-writerscommunity-writer\",\"date\":\"2023-01-12
+        17:11:36 GMT\",\"timestamp\":1673543496,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"m4E0O0f1\",\"tags\":[\"writersofinstagram\",\"writerscommunity\",\"writer\",\"wordsofwisdom\",\"poetsofinstagram\",\"poetry\",\"poetrycommunity\",\"poetsociety\",\"author\",\"lovestory\",\"diaries\",\"writerstag\",\"herstory\",\"canitellyousomething\",\"soul\",\"books\",\"bookstagram\",\"read\",\"thoughts\"],\"short_url\":\"https://tmblr.co/Zk9aHSdD9I9W4e00\",\"summary\":\"#writersofinstagram
+        #writerscommunity #writer #wordsofwisdom #poetsofinstagram #poetry #poetrycommunity
+        #poetsociety #author...\",\"should_open_in_legacy\":true,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"caption\":\"<p>#writersofinstagram
+        #writerscommunity #writer #wordsofwisdom #poetsofinstagram #poetry #poetrycommunity
+        #poetsociety #author #writer #lovestory #diaries #writerstag #herstory #canitellyousomething
+        #soul #books #bookstagram #read #thoughts<br/>\\n<a href=\\\"https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=</a></p>\",\"reblog\":{\"comment\":\"<p>#writersofinstagram
+        #writerscommunity #writer #wordsofwisdom #poetsofinstagram #poetry #poetrycommunity
+        #poetsociety #author #writer #lovestory #diaries #writerstag #herstory #canitellyousomething
+        #soul #books #bookstagram #read #thoughts<br><a href=\\\"https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=</a></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"icouldnthelpbutremember\",\"active\":true,\"theme\":{\"avatar_shape\":\"circle\",\"background_color\":\"#FFFFFF\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://assets.tumblr.com/images/default_header/optica_pattern_09.png?_v=abe6f565397f54e880c2b76e6fc2022e\",\"header_image_focused\":\"https://assets.tumblr.com/images/default_header/optica_pattern_09_focused_v3.png?_v=abe6f565397f54e880c2b76e6fc2022e\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://assets.tumblr.com/images/default_header/optica_pattern_09_focused_v3.png?_v=abe6f565397f54e880c2b76e6fc2022e\",\"header_stretch\":true,\"link_color\":\"#00B8FF\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706261546137976832\"},\"content_raw\":\"<p>#writersofinstagram
+        #writerscommunity #writer #wordsofwisdom #poetsofinstagram #poetry #poetrycommunity
+        #poetsociety #author #writer #lovestory #diaries #writerstag #herstory #canitellyousomething
+        #soul #books #bookstagram #read #thoughts<br><a href=\\\"https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=</a></p>\",\"content\":\"<p>#writersofinstagram
+        #writerscommunity #writer #wordsofwisdom #poetsofinstagram #poetry #poetrycommunity
+        #poetsociety #author #writer #lovestory #diaries #writerstag #herstory #canitellyousomething
+        #soul #books #bookstagram #read #thoughts<br /><a href=\\\"https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=\\\">https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=</a></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"link_url\":\"https://www.instagram.com/p/CXgzgeHOt7Y/?igshid=NGJjMDIxMWI=\",\"image_permalink\":\"https://icouldnthelpbutremember.tumblr.com/image/706261546137976832\",\"photos\":[{\"caption\":\"\",\"original_size\":{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s1280x1920/bcf834123b7f9ec84059eb8f6ea20e095fc70d4a.jpg\",\"width\":1080,\"height\":1080},\"alt_sizes\":[{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s1280x1920/bcf834123b7f9ec84059eb8f6ea20e095fc70d4a.jpg\",\"width\":1080,\"height\":1080},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s640x960/cd5870ed86f08eb5a23f83aabfabca779ba29dcc.jpg\",\"width\":640,\"height\":640},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s540x810/5b10cc3eb9cf1a88ec1339beb6c1107d61868a10.jpg\",\"width\":540,\"height\":540},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s500x750/7a5f6aeb4bb1be3ab4182b822269507a15aeb3bc.jpg\",\"width\":500,\"height\":500},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s400x600/4a38c6273d25e4e3be3cc47a7d84274fa08ba5be.jpg\",\"width\":400,\"height\":400},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s250x400/61308f7770065923d0fc0456241c5becf18d4074.jpg\",\"width\":250,\"height\":250},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s100x200/9b58d6b42b9b4e51b655f05da2dd0cba232a4b2b.jpg\",\"width\":100,\"height\":100},{\"url\":\"https://64.media.tumblr.com/6e4d3961e0f207088353588f460a7001/9584b469fd3ff369-3a/s75x75_c1/d2cbf236c29105b5f15b95e0252eaa5caf769ee0.jpg\",\"width\":75,\"height\":75}]}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"photo\",\"is_blocks_post_format\":false,\"blog_name\":\"auraredwood\",\"blog\":{\"name\":\"auraredwood\",\"title\":\"Aura
+        Redwood\",\"description\":\"Geeky writer\",\"url\":\"https://www.tumblr.com/blog/view/auraredwood\",\"uuid\":\"t:gTaZZy0Xlr2MNDnpko03ZQ\",\"updated\":1673543161,\"tumblrmart_accessories\":{}},\"id\":706261193940140033,\"id_string\":\"706261193940140033\",\"post_url\":\"https://www.tumblr.com/blog/view/auraredwood/706261193940140033\",\"slug\":\"\",\"date\":\"2023-01-12
+        17:06:01 GMT\",\"timestamp\":1673543161,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"wXtozq78\",\"tags\":[\"Writer\",\"Author\",\"Coffee\",\"Writing\",\"Books\",\"Book\"],\"short_url\":\"https://tmblr.co/ZsW7STdD9D1VSW01\",\"summary\":\"\",\"should_open_in_legacy\":true,\"recommended_source\":null,\"recommended_color\":null,\"post_author\":\"auraandthefullmoon\",\"note_count\":0,\"caption\":\"\",\"reblog\":{\"comment\":\"\",\"tree_html\":\"\"},\"trail\":[],\"image_permalink\":\"https://auraredwood.tumblr.com/image/706261193940140033\",\"photos\":[{\"caption\":\"\",\"original_size\":{\"url\":\"https://64.media.tumblr.com/1558411a5ffd2d4bac46e375f55f8e79/8090defcd7db9dc3-98/s250x400/2203db9a6439e06a5aab6d23fa3641f6612bd9b4.jpg\",\"width\":236,\"height\":236},\"alt_sizes\":[{\"url\":\"https://64.media.tumblr.com/1558411a5ffd2d4bac46e375f55f8e79/8090defcd7db9dc3-98/s250x400/2203db9a6439e06a5aab6d23fa3641f6612bd9b4.jpg\",\"width\":236,\"height\":236},{\"url\":\"https://64.media.tumblr.com/1558411a5ffd2d4bac46e375f55f8e79/8090defcd7db9dc3-98/s100x200/7955cf024aa26dc0abc6f46b4099bc63201a8164.jpg\",\"width\":100,\"height\":100},{\"url\":\"https://64.media.tumblr.com/1558411a5ffd2d4bac46e375f55f8e79/8090defcd7db9dc3-98/s75x75_c1/47aa906f50c2df4ab688d4ca85667d7f7039017d.jpg\",\"width\":75,\"height\":75}]}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"quote\",\"is_blocks_post_format\":false,\"blog_name\":\"aravenwriter\",\"blog\":{\"name\":\"aravenwriter\",\"title\":\"Why
+        is a raven like a writing desk?\",\"description\":\"Writing prompts\",\"url\":\"https://aravenwriter.tumblr.com/\",\"uuid\":\"t:qqs48lbV8-DSCUJrHxl_IA\",\"updated\":1673543071,\"tumblrmart_accessories\":{}},\"id\":706261099422662656,\"id_string\":\"706261099422662656\",\"post_url\":\"https://aravenwriter.tumblr.com/post/706261099422662656/i-dont-know-for-how-long-or-if-ill-ever-come\",\"slug\":\"i-dont-know-for-how-long-or-if-ill-ever-come\",\"date\":\"2023-01-12
+        17:04:31 GMT\",\"timestamp\":1673543071,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"RQ2wx0nF\",\"tags\":[\"writing\",\"writing
+        prompt\",\"writers on tumblr\",\"writer\",\"prompt\",\"writing idea\",\"writing
+        inspiration\",\"inspiration\",\"dialogue\",\"dialogue prompt\"],\"short_url\":\"https://tmblr.co/Zgp2eYdD9BfTmy00\",\"summary\":\"I
+        don’t know for how long or if I’ll ever come back, but yeah, I’m leaving\",\"should_open_in_legacy\":true,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":2,\"text\":\"I
+        don&rsquo;t know for how long or if I&rsquo;ll ever come back, but yeah, I&rsquo;m
+        leaving\",\"source\":\"\",\"reblog\":{\"comment\":\"\",\"tree_html\":\"\"},\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"starryswimmer\",\"blog\":{\"name\":\"starryswimmer\",\"title\":\"StarrySwimmer\",\"description\":\"\",\"url\":\"https://www.tumblr.com/blog/view/starryswimmer\",\"uuid\":\"t:C1WoW5cgdDebz84EzeCCXg\",\"updated\":1673542543,\"tumblrmart_accessories\":{}},\"id\":706260545787068416,\"id_string\":\"706260545787068416\",\"post_url\":\"https://www.tumblr.com/blog/view/starryswimmer/706260545787068416\",\"slug\":\"estratto-dal-capitolo-5-de-i-custodi-di-amius\",\"date\":\"2023-01-12
+        16:55:43 GMT\",\"timestamp\":1673542543,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"J1QXr4KI\",\"tags\":[\"sad
+        stories\",\"tumblr italia\",\"writer\",\"writers\",\"scrivere\",\"storie\",\"original
+        story\",\"tumblr\",\"citazioni\",\"instatumblr\",\"frasi tumblr\",\"pensieri\",\"frasi\",\"frasi
+        belle\",\"blog\",\"frasi libri\",\"libri\",\"frasi tumblr italia\",\"frasi
+        tristi\",\"frasi tristezza\",\"canva\",\"canva design\",\"fantasy\",\"fantasy
+        italia\",\"magia\",\"magic\"],\"short_url\":\"https://tmblr.co/Zlb-_QdD93bsWm00\",\"summary\":\"Estratto
+        dal capitolo 5 de \\\"I Custodi di Amius\\\", il romanzo che sto scrivendo
+        e che potete trovare sul mio profilo wattpad...\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1080\\\"
+        data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/35abff951b7c00b550a4aacb2992da25/dabced7d492d6cf6-31/s640x960/9f52347fa5eaa45964fa10da6e6938901916fdf9.png\\\"
+        data-orig-height=\\\"1080\\\" data-orig-width=\\\"1080\\\"/></figure></div><p>Estratto
+        dal capitolo 5 de &ldquo;<a href=\\\"https://href.li/?https://www.wattpad.com/story/314649499-i-custodi-di-amius\\\">I
+        Custodi di Amius</a>&rdquo;, il romanzo che sto scrivendo e che potete trovare
+        sul mio profilo wattpad <a href=\\\"https://href.li/?https://www.wattpad.com/user/Risia99\\\">Risia99</a></p><p>ps:
+        Ricordo che la storia è in fase revisione e potrebbe subire modifiche.</p>\",\"reblog\":{\"comment\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1080\\\"
+        data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/35abff951b7c00b550a4aacb2992da25/dabced7d492d6cf6-31/s640x960/9f52347fa5eaa45964fa10da6e6938901916fdf9.png\\\"
+        data-orig-height=\\\"1080\\\" data-orig-width=\\\"1080\\\"></figure></div><p>Estratto
+        dal capitolo 5 de “<a href=\\\"https://href.li/?https://www.wattpad.com/story/314649499-i-custodi-di-amius\\\">I
+        Custodi di Amius</a>”, il romanzo che sto scrivendo e che potete trovare sul
+        mio profilo wattpad <a href=\\\"https://href.li/?https://www.wattpad.com/user/Risia99\\\">Risia99</a></p><p>ps:
+        Ricordo che la storia è in fase revisione e potrebbe subire modifiche.</p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"starryswimmer\",\"active\":true,\"theme\":{\"header_full_width\":1550,\"header_full_height\":1080,\"header_focus_width\":1550,\"header_focus_height\":872,\"avatar_shape\":\"circle\",\"background_color\":\"#400080\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"138,1550,1010,0\",\"header_image\":\"https://64.media.tumblr.com/e680eaf2ccc17cfb233faf58a7891d1c/e3d5e847d9a68b7e-a2/s1550x1080/08529fb22c42b387fb99a31147118030a478d57b.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/e680eaf2ccc17cfb233faf58a7891d1c/e3d5e847d9a68b7e-a2/s2048x3072_c0,12778,100000,93519/05a2dcf61f37e26494dc9422c1186943c7a598cd.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/e680eaf2ccc17cfb233faf58a7891d1c/e3d5e847d9a68b7e-a2/s2048x3072/cb2ab075a9ea8cfc99ec1ff73c1356316dd92643.jpg\",\"header_stretch\":true,\"link_color\":\"#ffffff\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#ffffff\",\"title_font\":\"1785
+        GLC Baskerville\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706260545787068416\"},\"content_raw\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"1080\\\"
+        data-orig-width=\\\"1080\\\"><img src=\\\"https://64.media.tumblr.com/35abff951b7c00b550a4aacb2992da25/dabced7d492d6cf6-31/s640x960/9f52347fa5eaa45964fa10da6e6938901916fdf9.png\\\"
+        data-orig-height=\\\"1080\\\" data-orig-width=\\\"1080\\\"></figure></div><p>Estratto
+        dal capitolo 5 de “<a href=\\\"https://href.li/?https://www.wattpad.com/story/314649499-i-custodi-di-amius\\\">I
+        Custodi di Amius</a>”, il romanzo che sto scrivendo e che potete trovare sul
+        mio profilo wattpad <a href=\\\"https://href.li/?https://www.wattpad.com/user/Risia99\\\">Risia99</a></p><p>ps:
+        Ricordo che la storia è in fase revisione e potrebbe subire modifiche.</p></p>\",\"content\":\"<p><figure
+        class=\\\"tmblr-full\\\"><img src=\\\"https://64.media.tumblr.com/35abff951b7c00b550a4aacb2992da25/dabced7d492d6cf6-31/s640x960/9f52347fa5eaa45964fa10da6e6938901916fdf9.png\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>Estratto dal capitolo 5 de &ldquo;<a
+        href=\\\"https://href.li/?https://www.wattpad.com/story/314649499-i-custodi-di-amius\\\">I
+        Custodi di Amius</a>&rdquo;, il romanzo che sto scrivendo e che potete trovare
+        sul mio profilo wattpad <a href=\\\"https://href.li/?https://www.wattpad.com/user/Risia99\\\">Risia99</a></p><p>ps:
+        Ricordo che la storia &egrave; in fase revisione e potrebbe subire modifiche.</p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"foxy-not-pirate\",\"blog\":{\"name\":\"foxy-not-pirate\",\"title\":\"Fox!\",\"description\":\"Hi
+        I exist but not functionally-any pronouns- minor so don’t be creepy- I like
+        a bunch of fandoms but I don’t want to list them all in case of change- sometimes
+        I draw or write but mostly this is a reblog page.\",\"url\":\"https://foxy-not-pirate.tumblr.com/\",\"uuid\":\"t:Q60LRwWamvfG2FYjQcLwDg\",\"updated\":1673541233,\"tumblrmart_accessories\":{}},\"id\":706259172685185024,\"id_string\":\"706259172685185024\",\"post_url\":\"https://foxy-not-pirate.tumblr.com/post/706259172685185024/hi-i-wrote-something-for-the-first-time-in-ages\",\"slug\":\"hi-i-wrote-something-for-the-first-time-in-ages\",\"date\":\"2023-01-12
+        16:33:53 GMT\",\"timestamp\":1673541233,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"mPcvBG1B\",\"tags\":[\"transgender\",\"nonbinary\",\"writer\",\"original
+        writing\"],\"short_url\":\"https://tmblr.co/Z6JBGRdD8ld3Gm00\",\"summary\":\"Hi!
+        I wrote something for the first time in ages, and I’m really excited to share
+        it! It’s inspired by a conversation I had a...\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p>Hi!
+        I wrote something for the first time in ages, and I’m really excited to share
+        it! It’s inspired by a conversation I had a while back, but based in fiction.
+        Here it is.</p><p>“So, you’re trans, right?” A short story.</p><!-- more --><p>“So,
+        you’re trans, right?” Four words. </p><p>Four words that shouldn’t matter
+        as much as they do, shouldn’t sting as they do. </p><p>Four words that say,
+        I know better than you. </p><p>I get it, I really do. You want someone else
+        like you, someone you can show to your parents and say, “See? I am not the
+        only one, the strange being.” I get it. I know how you feel. You want to say,
+        if this person, younger than me, just barely a teen, can be themself, why
+        can’t I?</p><p>Except I am not transgender. I am by no means <i>cis</i> either,
+        but still. I am a person outside of what you know about gender. If your gender
+        is 3-dimensional, has a shape, mine is 4- or 5-dimensional, beyond even my
+        comprehension, let alone yours. </p><p>You do not understand. That’s okay,
+        I like it when people don’t understand.</p><p>But you won’t just leave it
+        be. Instead of allowing yourself to not comprehend, you tack on a word you
+        <i>do </i>understand, although it doesn’t fit what I mean, what I <i>am</i>. </p><p>You
+        forget where we are. We are in a sanctuary, a place for kids like you and
+        like me, kids who aren&rsquo;t cis, or cis <i>enough </i>for other’s eyes. </p><p>So
+        if you want transness, look around. Look, over there to those girls sitting
+        together, holding hands. (They think we don’t know. We all do.) Listen. What
+        are they talking about? They’re talking about where to find gender clinics,
+        who will give them a prescription for estrogen. They’re talking about it as
+        though discussing drug dealers, all hushed tones and shifting eyes. They forget,
+        too, that no one here will judge them or report them or gossip or any number
+        of horrible things that happen to trans kids.</p><p>If you want more proof
+        that you’re not the only one, keep looking around. Look, in the other direction.
+        Do you see? Do you see the boy on the grass, sitting with his mother and another
+        man somewhere in his twenties, talking about ways to start binding his chest?
+        Look at him, younger than me, and younger than you by far, only twelve years
+        old. Twelve! And see how he slouches over his chest, and only wears those
+        baggy shirts, most of which advertise various Five Nights at Freddy’s games
+        or characters. (No accounting for taste, but he is just another tween, unapologetically
+        happy about some game series that he likes.)</p><p> I see more happy trans
+        kids around, as well as kids with other genders, or multiple genders, or no
+        gender at all here, than I do in several months at home.</p><p>So look, look
+        around and you’ll find so many trans kids, more than you’ve ever seen in one
+        place before. </p><p>And all of them, all of the people here, aside from families,
+        and sometimes including families, have been hurt, sometimes physically and
+        sometimes verbally and sometimes a mix of both. And yet, and yet, still we
+        are here and happy.</p><p>So do not worry. Let yourself be who you are and
+        let me be who I am. Look at me, and look around you, and know you will be
+        okay. </p><p>I am not trans. But you are, and that is good. I know you have
+        been hurt before. But for now, relax and enjoy the sunshine and the fact that
+        you are not alone, and we’re all in this together.</p>\",\"body_abstract\":\"\\n<p>Hi!
+        I wrote something for the first time in ages, and I&rsquo;m really excited
+        to share it! It&rsquo;s inspired by a conversation I had a while back, but
+        based in fiction. Here it is.</p>\\n<p>&ldquo;So, you&rsquo;re trans, right?&rdquo;
+        A short story.</p>\\n\",\"reblog\":{\"comment\":\"<p>Hi! I wrote something
+        for the first time in ages, and I’m really excited to share it! It’s inspired
+        by a conversation I had a while back, but based in fiction. Here it is.</p><p>“So,
+        you’re trans, right?” A short story.</p>[[MORE]]<p>“So, you’re trans, right?”
+        Four words. </p><p>Four words that shouldn’t matter as much as they do, shouldn’t
+        sting as they do. </p><p>Four words that say, I know better than you. </p><p>I
+        get it, I really do. You want someone else like you, someone you can show
+        to your parents and say, “See? I am not the only one, the strange being.”
+        I get it. I know how you feel. You want to say, if this person, younger than
+        me, just barely a teen, can be themself, why can’t I?</p><p>Except I am not
+        transgender. I am by no means <i>cis</i> either, but still. I am a person
+        outside of what you know about gender. If your gender is 3-dimensional, has
+        a shape, mine is 4- or 5-dimensional, beyond even my comprehension, let alone
+        yours. </p><p>You do not understand. That’s okay, I like it when people don’t
+        understand.</p><p>But you won’t just leave it be. Instead of allowing yourself
+        to not comprehend, you tack on a word you <i>do </i>understand, although it
+        doesn’t fit what I mean, what I <i>am</i>. </p><p>You forget where we are.
+        We are in a sanctuary, a place for kids like you and like me, kids who aren’t
+        cis, or cis <i>enough </i>for other’s eyes. </p><p>So if you want transness,
+        look around. Look, over there to those girls sitting together, holding hands.
+        (They think we don’t know. We all do.) Listen. What are they talking about?
+        They’re talking about where to find gender clinics, who will give them a prescription
+        for estrogen. They’re talking about it as though discussing drug dealers,
+        all hushed tones and shifting eyes. They forget, too, that no one here will
+        judge them or report them or gossip or any number of horrible things that
+        happen to trans kids.</p><p>If you want more proof that you’re not the only
+        one, keep looking around. Look, in the other direction. Do you see? Do you
+        see the boy on the grass, sitting with his mother and another man somewhere
+        in his twenties, talking about ways to start binding his chest? Look at him,
+        younger than me, and younger than you by far, only twelve years old. Twelve!
+        And see how he slouches over his chest, and only wears those baggy shirts,
+        most of which advertise various Five Nights at Freddy’s games or characters.
+        (No accounting for taste, but he is just another tween, unapologetically happy
+        about some game series that he likes.)</p><p> I see more happy trans kids
+        around, as well as kids with other genders, or multiple genders, or no gender
+        at all here, than I do in several months at home.</p><p>So look, look around
+        and you’ll find so many trans kids, more than you’ve ever seen in one place
+        before. </p><p>And all of them, all of the people here, aside from families,
+        and sometimes including families, have been hurt, sometimes physically and
+        sometimes verbally and sometimes a mix of both. And yet, and yet, still we
+        are here and happy.</p><p>So do not worry. Let yourself be who you are and
+        let me be who I am. Look at me, and look around you, and know you will be
+        okay. </p><p>I am not trans. But you are, and that is good. I know you have
+        been hurt before. But for now, relax and enjoy the sunshine and the fact that
+        you are not alone, and we’re all in this together.</p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"foxy-not-pirate\",\"active\":true,\"theme\":{\"header_full_width\":3000,\"header_full_height\":1055,\"header_focus_width\":775,\"header_focus_height\":727,\"avatar_shape\":\"circle\",\"background_color\":\"#ffc7c7\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"0,2403,727,1628\",\"header_image\":\"https://64.media.tumblr.com/bd7a0b3b36d476503fc81fb5c683d457/5faa769450f8ccf0-74/s1125x868/0e5b72f08c35c64bb293849f61ab1b0a9e50db4c.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/bd7a0b3b36d476503fc81fb5c683d457/5faa769450f8ccf0-74/s2048x3072_c54267,0,80100,68910/8c38e2681f1002074b99de90428d13364c6f04ec.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/bd7a0b3b36d476503fc81fb5c683d457/5faa769450f8ccf0-74/s2048x3072/02e9492e35d8aa64c463a181d4e061b392f9a188.jpg\",\"header_stretch\":true,\"link_color\":\"#A77DC2\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#b997ce\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706259172685185024\"},\"content_raw\":\"<p>Hi!
+        I wrote something for the first time in ages, and I’m really excited to share
+        it! It’s inspired by a conversation I had a while back, but based in fiction.
+        Here it is.</p><p>“So, you’re trans, right?” A short story.</p>[[MORE]]<p>“So,
+        you’re trans, right?” Four words. </p><p>Four words that shouldn’t matter
+        as much as they do, shouldn’t sting as they do. </p><p>Four words that say,
+        I know better than you. </p><p>I get it, I really do. You want someone else
+        like you, someone you can show to your parents and say, “See? I am not the
+        only one, the strange being.” I get it. I know how you feel. You want to say,
+        if this person, younger than me, just barely a teen, can be themself, why
+        can’t I?</p><p>Except I am not transgender. I am by no means <i>cis</i> either,
+        but still. I am a person outside of what you know about gender. If your gender
+        is 3-dimensional, has a shape, mine is 4- or 5-dimensional, beyond even my
+        comprehension, let alone yours. </p><p>You do not understand. That’s okay,
+        I like it when people don’t understand.</p><p>But you won’t just leave it
+        be. Instead of allowing yourself to not comprehend, you tack on a word you
+        <i>do </i>understand, although it doesn’t fit what I mean, what I <i>am</i>. </p><p>You
+        forget where we are. We are in a sanctuary, a place for kids like you and
+        like me, kids who aren’t cis, or cis <i>enough </i>for other’s eyes. </p><p>So
+        if you want transness, look around. Look, over there to those girls sitting
+        together, holding hands. (They think we don’t know. We all do.) Listen. What
+        are they talking about? They’re talking about where to find gender clinics,
+        who will give them a prescription for estrogen. They’re talking about it as
+        though discussing drug dealers, all hushed tones and shifting eyes. They forget,
+        too, that no one here will judge them or report them or gossip or any number
+        of horrible things that happen to trans kids.</p><p>If you want more proof
+        that you’re not the only one, keep looking around. Look, in the other direction.
+        Do you see? Do you see the boy on the grass, sitting with his mother and another
+        man somewhere in his twenties, talking about ways to start binding his chest?
+        Look at him, younger than me, and younger than you by far, only twelve years
+        old. Twelve! And see how he slouches over his chest, and only wears those
+        baggy shirts, most of which advertise various Five Nights at Freddy’s games
+        or characters. (No accounting for taste, but he is just another tween, unapologetically
+        happy about some game series that he likes.)</p><p> I see more happy trans
+        kids around, as well as kids with other genders, or multiple genders, or no
+        gender at all here, than I do in several months at home.</p><p>So look, look
+        around and you’ll find so many trans kids, more than you’ve ever seen in one
+        place before. </p><p>And all of them, all of the people here, aside from families,
+        and sometimes including families, have been hurt, sometimes physically and
+        sometimes verbally and sometimes a mix of both. And yet, and yet, still we
+        are here and happy.</p><p>So do not worry. Let yourself be who you are and
+        let me be who I am. Look at me, and look around you, and know you will be
+        okay. </p><p>I am not trans. But you are, and that is good. I know you have
+        been hurt before. But for now, relax and enjoy the sunshine and the fact that
+        you are not alone, and we’re all in this together.</p>\",\"content\":\"<p>Hi!
+        I wrote something for the first time in ages, and I&rsquo;m really excited
+        to share it! It&rsquo;s inspired by a conversation I had a while back, but
+        based in fiction. Here it is.</p><p>&ldquo;So, you&rsquo;re trans, right?&rdquo;
+        A short story.</p><p>&ldquo;So, you&rsquo;re trans, right?&rdquo; Four words.&nbsp;</p><p>Four
+        words that shouldn&rsquo;t matter as much as they do, shouldn&rsquo;t sting
+        as they do.&nbsp;</p><p>Four words that say, I know better than you.&nbsp;</p><p>I
+        get it, I really do. You want someone else like you, someone you can show
+        to your parents and say, &ldquo;See? I am not the only one, the strange being.&rdquo;
+        I get it. I know how you feel. You want to say, if this person, younger than
+        me, just barely a teen, can be themself, why can&rsquo;t I?</p><p>Except I
+        am not transgender. I am by no means <i>cis</i> either, but still. I am a
+        person outside of what you know about gender. If your gender is 3-dimensional,
+        has a shape, mine is 4- or 5-dimensional, beyond even my comprehension, let
+        alone yours.&nbsp;</p><p>You do not understand. That&rsquo;s okay, I like
+        it when people don&rsquo;t understand.</p><p>But you won&rsquo;t just leave
+        it be. Instead of allowing yourself to not comprehend, you tack on a word
+        you <i>do </i>understand, although it doesn&rsquo;t fit what I mean, what
+        I <i>am</i>.&nbsp;</p><p>You forget where we are. We are in a sanctuary, a
+        place for kids like you and like me, kids who aren&rsquo;t cis, or cis <i>enough
+        </i>for other&rsquo;s eyes.&nbsp;</p><p>So if you want transness, look around.
+        Look, over there to those girls sitting together, holding hands. (They think
+        we don&rsquo;t know. We all do.) Listen. What are they talking about? They&rsquo;re
+        talking about where to find gender clinics, who will give them a prescription
+        for estrogen. They&rsquo;re talking about it as though discussing drug dealers,
+        all hushed tones and shifting eyes. They forget, too, that no one here will
+        judge them or report them or gossip or any number of horrible things that
+        happen to trans kids.</p><p>If you want more proof that you&rsquo;re not the
+        only one, keep looking around. Look, in the other direction. Do you see? Do
+        you see the boy on the grass, sitting with his mother and another man somewhere
+        in his twenties, talking about ways to start binding his chest? Look at him,
+        younger than me, and younger than you by far, only twelve years old. Twelve!
+        And see how he slouches over his chest, and only wears those baggy shirts,
+        most of which advertise various Five Nights at Freddy&rsquo;s games or characters.
+        (No accounting for taste, but he is just another tween, unapologetically happy
+        about some game series that he likes.)</p><p>&nbsp;I see more happy trans
+        kids around, as well as kids with other genders, or multiple genders, or no
+        gender at all here, than I do in several months at home.</p><p>So look, look
+        around and you&rsquo;ll find so many trans kids, more than you&rsquo;ve ever
+        seen in one place before.&nbsp;</p><p>And all of them, all of the people here,
+        aside from families, and sometimes including families, have been hurt, sometimes
+        physically and sometimes verbally and sometimes a mix of both. And yet, and
+        yet, still we are here and happy.</p><p>So do not worry. Let yourself be who
+        you are and let me be who I am. Look at me, and look around you, and know
+        you will be okay.&nbsp;</p><p>I am not trans. But you are, and that is good.
+        I know you have been hurt before. But for now, relax and enjoy the sunshine
+        and the fact that you are not alone, and we&rsquo;re all in this together.</p>\",\"content_abstract\":\"<p>\\n<p>Hi!
+        I wrote something for the first time in ages, and I&rsquo;m really excited
+        to share it! It&rsquo;s inspired by a conversation I had a while back, but
+        based in fiction. Here it is.</p>\\n<p>&ldquo;So, you&rsquo;re trans, right?&rdquo;
+        A short story.</p>\\n</p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"existencelivingart\",\"blog\":{\"name\":\"existencelivingart\",\"title\":\"Existence|Living|Art\",\"description\":\"Inspiring
+        and illuminating nuggets of existence, living, art, philosophy, science, and
+        more\",\"url\":\"https://www.tumblr.com/blog/view/existencelivingart\",\"uuid\":\"t:dUOgozs3LinAMX4DIeaj_Q\",\"updated\":1673541091,\"tumblrmart_accessories\":{}},\"id\":706259023871279105,\"id_string\":\"706259023871279105\",\"post_url\":\"https://www.tumblr.com/blog/view/existencelivingart/706259023871279105\",\"slug\":\"when-your-demon-is-in-charge-do-not-try-to-think\",\"date\":\"2023-01-12
+        16:31:31 GMT\",\"timestamp\":1673541091,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"M9whmO2I\",\"tags\":[\"author\",\"writer\",\"life\",\"ego\",\"the
+        self\",\"rudyard kipling\",\"quotes\",\"quoteoftheday\",\"happiness\",\"discipline\",\"daily
+        life\"],\"short_url\":\"https://tmblr.co/Z_kDyQdD8jSTGm01\",\"summary\":\"\\\"When
+        your demon is in charge do not try to think consciously. Drift, wait, and
+        obey.\\\"\\n-Rudyard Kipling\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p>&ldquo;When
+        your demon is in charge do not try to think consciously. Drift, wait, and
+        obey.&rdquo;</p><p>-Rudyard Kipling</p>\",\"reblog\":{\"comment\":\"<p>“When
+        your demon is in charge do not try to think consciously. Drift, wait, and
+        obey.”</p><p>-Rudyard Kipling</p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"existencelivingart\",\"active\":true,\"theme\":{\"avatar_shape\":\"circle\",\"background_color\":\"#bce8eb\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":0,\"header_image\":\"https://assets.tumblr.com/images/default_header/optica_pattern_01.png?_v=f67ca5ac5d1c4a0526964674cb5a0605\",\"header_image_focused\":\"https://assets.tumblr.com/images/default_header/optica_pattern_01_focused_v3.png?_v=f67ca5ac5d1c4a0526964674cb5a0605\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://assets.tumblr.com/images/default_header/optica_pattern_01_focused_v3.png?_v=f67ca5ac5d1c4a0526964674cb5a0605\",\"header_stretch\":true,\"link_color\":\"#0079d3\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":false,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706259023871279105\"},\"content_raw\":\"<p>“When
+        your demon is in charge do not try to think consciously. Drift, wait, and
+        obey.”</p><p>-Rudyard Kipling</p>\",\"content\":\"<p>&ldquo;When your demon
+        is in charge do not try to think consciously. Drift, wait, and obey.&rdquo;</p><p>-Rudyard
+        Kipling</p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"moriarttii\",\"blog\":{\"name\":\"moriarttii\",\"title\":\"m
+        o r i\",\"description\":\"she/they . 18 .  I write, feel free to read\",\"url\":\"https://www.tumblr.com/blog/view/moriarttii\",\"uuid\":\"t:exGG1Z6_R33c1ZbzIrzzKw\",\"updated\":1673536951,\"tumblrmart_accessories\":{}},\"id\":706254682347192320,\"id_string\":\"706254682347192320\",\"post_url\":\"https://www.tumblr.com/blog/view/moriarttii/706254682347192320\",\"slug\":\"an-old-one-you-cam-find-me-on-instagram\",\"date\":\"2023-01-12
+        15:22:31 GMT\",\"timestamp\":1673536951,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"ku4cTJUM\",\"tags\":[\"poem\",\"poetry\",\"art\",\"writer\"],\"short_url\":\"https://tmblr.co/Z8ocyQdD7kH6Gi00\",\"summary\":\"an
+        old one\\nyou cam find me on instagram @/mori.art.tii\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":1,\"title\":\"\",\"body\":\"<div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"2048\\\"
+        data-orig-width=\\\"1017\\\"><img src=\\\"https://64.media.tumblr.com/ce3cddcb51d1660133e49eef4b4e466f/9d6ab7d0aebba407-0d/s640x960/522325238df48f37b20b008ca62182edf67f0ce7.png\\\"
+        data-orig-height=\\\"2048\\\" data-orig-width=\\\"1017\\\"/></figure></div><p>an
+        old one</p><p>you cam find me on instagram @/mori.art.tii</p>\",\"reblog\":{\"comment\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"2048\\\"
+        data-orig-width=\\\"1017\\\"><img src=\\\"https://64.media.tumblr.com/ce3cddcb51d1660133e49eef4b4e466f/9d6ab7d0aebba407-0d/s640x960/522325238df48f37b20b008ca62182edf67f0ce7.png\\\"
+        data-orig-height=\\\"2048\\\" data-orig-width=\\\"1017\\\"></figure></div><p>an
+        old one</p><p>you cam find me on instagram @/mori.art.tii</p></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"moriarttii\",\"active\":true,\"theme\":{\"header_full_width\":1554,\"header_full_height\":1556,\"avatar_shape\":\"circle\",\"background_color\":\"#C7B5C8\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/b65c48471befae40afe415194f9fe48a/c41a3c033bba926c-da/s1554x1556/006faba27dc71c22a2e29b82585439d3fada3f93.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/b65c48471befae40afe415194f9fe48a/c41a3c033bba926c-da/s2048x3072/04f829f3d889d5650519eb70cbe6ca84b96b1d94.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/b65c48471befae40afe415194f9fe48a/c41a3c033bba926c-da/s2048x3072/04f829f3d889d5650519eb70cbe6ca84b96b1d94.jpg\",\"header_stretch\":true,\"link_color\":\"#91EAA8\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#764172\",\"title_font\":\"Calluna\",\"title_font_weight\":\"bold\"},\"share_likes\":true,\"share_following\":true,\"can_be_followed\":true},\"post\":{\"id\":\"706254682347192320\"},\"content_raw\":\"<p><div
+        class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\" data-orig-height=\\\"2048\\\"
+        data-orig-width=\\\"1017\\\"><img src=\\\"https://64.media.tumblr.com/ce3cddcb51d1660133e49eef4b4e466f/9d6ab7d0aebba407-0d/s640x960/522325238df48f37b20b008ca62182edf67f0ce7.png\\\"
+        data-orig-height=\\\"2048\\\" data-orig-width=\\\"1017\\\"></figure></div><p>an
+        old one</p><p>you cam find me on instagram @/mori.art.tii</p></p>\",\"content\":\"<p><figure
+        class=\\\"tmblr-full\\\"><img src=\\\"https://64.media.tumblr.com/ce3cddcb51d1660133e49eef4b4e466f/9d6ab7d0aebba407-0d/s640x960/522325238df48f37b20b008ca62182edf67f0ce7.png\\\"
+        alt=\\\"image\\\" class=\\\"\\\"/></figure><p>an old one</p><p>you cam find
+        me on instagram @/mori.art.tii</p></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"kerenobara\",\"blog\":{\"name\":\"kerenobara\",\"title\":\"KEREN
+        OBARA-on tumblr\",\"description\":\"\",\"url\":\"https://kerenobara.tumblr.com/\",\"uuid\":\"t:DaM0XKQlJCgHFCk1q5_6jQ\",\"updated\":1673536606,\"tumblrmart_accessories\":{}},\"id\":706254320069378048,\"id_string\":\"706254320069378048\",\"post_url\":\"https://kerenobara.tumblr.com/post/706254320069378048\",\"slug\":\"\",\"date\":\"2023-01-12
+        15:16:45 GMT\",\"timestamp\":1673536605,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"BTLRssFI\",\"tags\":[\"Keren
+        Obara\",\"writer\"],\"short_url\":\"https://tmblr.co/ZWZy9WdD7e-iqW00\",\"summary\":\"\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"480\\\" data-orig-width=\\\"248\\\"
+        data-npf='{\\\"type\\\":\\\"video\\\",\\\"provider\\\":\\\"tumblr\\\",\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"media\\\":{\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"type\\\":\\\"video/mp4\\\",\\\"width\\\":248,\\\"height\\\":480},\\\"poster\\\":[{\\\"url\\\":\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":248,\\\"height\\\":480}],\\\"filmstrip\\\":{\\\"url\\\":\\\"https://64.media.tumblr.com/previews/tumblr_rodp2x3f9V1yv6ozx_filmstrip.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":2000,\\\"height\\\":384}}'><video
+        controls=\\\"controls\\\" autoplay=\\\"autoplay\\\" muted=\\\"muted\\\" poster=\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\"><source
+        src=\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\" type=\\\"video/mp4\\\"></source></video></figure>\",\"reblog\":{\"comment\":\"<p><figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"480\\\" data-orig-width=\\\"248\\\"
+        data-npf='{\\\"type\\\":\\\"video\\\",\\\"provider\\\":\\\"tumblr\\\",\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"media\\\":{\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"type\\\":\\\"video/mp4\\\",\\\"width\\\":248,\\\"height\\\":480},\\\"poster\\\":[{\\\"url\\\":\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":248,\\\"height\\\":480}],\\\"filmstrip\\\":{\\\"url\\\":\\\"https://64.media.tumblr.com/previews/tumblr_rodp2x3f9V1yv6ozx_filmstrip.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":2000,\\\"height\\\":384}}'><video
+        controls=\\\"controls\\\" autoplay=\\\"autoplay\\\" muted=\\\"muted\\\" poster=\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\"><source
+        src=\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\" type=\\\"video/mp4\\\"></source></video></figure></p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"kerenobara\",\"active\":true,\"theme\":{\"header_full_width\":2240,\"header_full_height\":1260,\"avatar_shape\":\"square\",\"background_color\":\"#FFFFFF\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"\",\"header_image\":\"https://64.media.tumblr.com/f7072e2f350076ff7993526b17e90272/760d26b381271650-12/s3464x3464/6b1b4803f733d660b8b24dd07496c998229c1993.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/f7072e2f350076ff7993526b17e90272/760d26b381271650-12/s2048x3072/eab9db93ae7a1c8b6b70d767cd0434590d7fb77d.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/f7072e2f350076ff7993526b17e90272/760d26b381271650-12/s2048x3072/eab9db93ae7a1c8b6b70d767cd0434590d7fb77d.jpg\",\"header_stretch\":false,\"link_color\":\"#102029\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Sans
+        Serif\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706254320069378048\"},\"content_raw\":\"<p><figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"480\\\" data-orig-width=\\\"248\\\"
+        data-npf='{\\\"type\\\":\\\"video\\\",\\\"provider\\\":\\\"tumblr\\\",\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"media\\\":{\\\"url\\\":\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\",\\\"type\\\":\\\"video/mp4\\\",\\\"width\\\":248,\\\"height\\\":480},\\\"poster\\\":[{\\\"url\\\":\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":248,\\\"height\\\":480}],\\\"filmstrip\\\":{\\\"url\\\":\\\"https://64.media.tumblr.com/previews/tumblr_rodp2x3f9V1yv6ozx_filmstrip.jpg\\\",\\\"type\\\":\\\"image/jpeg\\\",\\\"width\\\":2000,\\\"height\\\":384}}'><video
+        controls=\\\"controls\\\" autoplay=\\\"autoplay\\\" muted=\\\"muted\\\" poster=\\\"https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg\\\"><source
+        src=\\\"https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4\\\" type=\\\"video/mp4\\\"></source></video></figure></p>\",\"content\":\"<p><figure
+        class=\\\"tmblr-full\\\" data-npf=\\\"{&quot;type&quot;:&quot;video&quot;,&quot;provider&quot;:&quot;tumblr&quot;,&quot;url&quot;:&quot;https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4&quot;,&quot;media&quot;:{&quot;url&quot;:&quot;https://va.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx.mp4&quot;,&quot;type&quot;:&quot;video/mp4&quot;,&quot;width&quot;:248,&quot;height&quot;:480},&quot;poster&quot;:[{&quot;url&quot;:&quot;https://64.media.tumblr.com/tumblr_rodp2x3f9V1yv6ozx_frame1.jpg&quot;,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;width&quot;:248,&quot;height&quot;:480}],&quot;filmstrip&quot;:{&quot;url&quot;:&quot;https://64.media.tumblr.com/previews/tumblr_rodp2x3f9V1yv6ozx_filmstrip.jpg&quot;,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;width&quot;:2000,&quot;height&quot;:384}}\\\"></figure></p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true},{\"type\":\"text\",\"is_blocks_post_format\":true,\"blog_name\":\"caremorebook\",\"blog\":{\"name\":\"caremorebook\",\"title\":\"Care
+        More\",\"description\":\"<p>Official site to the upcoming book “Care More:
+        A Guide to Timeless Men Fashion”</p>\",\"url\":\"https://www.tumblr.com/blog/view/caremorebook\",\"uuid\":\"t:gdkX3X0Osf4tesW-RxF8xQ\",\"updated\":1673536453,\"tumblrmart_accessories\":{}},\"id\":706254160436264960,\"id_string\":\"706254160436264960\",\"post_url\":\"https://www.tumblr.com/blog/view/caremorebook/706254160436264960\",\"slug\":\"why-write-a-book\",\"date\":\"2023-01-12
+        15:14:13 GMT\",\"timestamp\":1673536453,\"state\":\"published\",\"format\":\"html\",\"reblog_key\":\"mKkvBkcd\",\"tags\":[\"book
+        writing\",\"writer\",\"fashion writing\",\"care more book\",\"lifestyle\",\"books\",\"author\",\"writing\",\"writing
+        process\"],\"short_url\":\"https://tmblr.co/ZkG2yQdD7ch1yW00\",\"summary\":\"Why
+        Write a Book?\",\"should_open_in_legacy\":false,\"recommended_source\":null,\"recommended_color\":null,\"note_count\":0,\"title\":\"\",\"body\":\"<p
+        class=\\\"npf_quote\\\">Why Write a Book? </p><div class=\\\"npf_row\\\"><figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\"
+        data-tumblr-attribution=\\\"everythingelseistaken8:zvZ2N6iINV8tWHco69rDJA:ZCUXGW2mnvpXt\\\"><img
+        src=\\\"https://64.media.tumblr.com/6e4f08d7aa9c2b9cba5020dfd9a94c08/2419fdcbf172be7a-74/s640x960/fd54a3cd3a695fbbb19302816bfabb206a5b4f03.gif\\\"
+        data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\"/></figure></div><p>1.
+        Develop skills: Writing, editing, planning, time management, self discipline.
+        </p><p>2. Self Discovery: writing can introduce a new side of yourself you
+        never knew. </p><p>3. Valuable information or expertise to share. </p><p>4.
+        Motivate, inspire, and influence others. </p><p>5. Spark dialogue. </p><p>6.
+        New source of income. </p>\",\"reblog\":{\"comment\":\"<p class=\\\"npf_quote\\\">Why
+        Write a Book? </p><div class=\\\"npf_row\\\"><figure class=\\\"tmblr-full\\\"
+        data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\" data-tumblr-attribution=\\\"everythingelseistaken8:zvZ2N6iINV8tWHco69rDJA:ZCUXGW2mnvpXt\\\"><img
+        src=\\\"https://64.media.tumblr.com/6e4f08d7aa9c2b9cba5020dfd9a94c08/2419fdcbf172be7a-74/s640x960/fd54a3cd3a695fbbb19302816bfabb206a5b4f03.gif\\\"
+        data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\"></figure></div><p>1.
+        Develop skills: Writing, editing, planning, time management, self discipline.
+        </p><p>2. Self Discovery: writing can introduce a new side of yourself you
+        never knew. </p><p>3. Valuable information or expertise to share. </p><p>4.
+        Motivate, inspire, and influence others. </p><p>5. Spark dialogue. </p><p>6.
+        New source of income. </p>\",\"tree_html\":\"\"},\"trail\":[{\"blog\":{\"name\":\"caremorebook\",\"active\":true,\"theme\":{\"header_full_width\":2048,\"header_full_height\":1538,\"header_focus_width\":1764,\"header_focus_height\":992,\"avatar_shape\":\"circle\",\"background_color\":\"#FFFFFF\",\"body_font\":\"Helvetica
+        Neue\",\"header_bounds\":\"546,1821,1538,57\",\"header_image\":\"https://64.media.tumblr.com/4ef266517d6701822f8c7d82e464c317/611987bbfd4f0c00-90/s2048x1538/c326f83b93e41f9883eba0f9614b5e458f07d40d.jpg\",\"header_image_focused\":\"https://64.media.tumblr.com/4ef266517d6701822f8c7d82e464c317/611987bbfd4f0c00-90/s2048x3072_c2783,35501,88916,100000/10e5f111f594c64633987a56938880a09a62712c.jpg\",\"header_image_poster\":\"\",\"header_image_scaled\":\"https://64.media.tumblr.com/4ef266517d6701822f8c7d82e464c317/611987bbfd4f0c00-90/s2048x3072/8d9fc2072371224cb3e40e2b28503860689433f1.jpg\",\"header_stretch\":true,\"link_color\":\"#666666\",\"show_avatar\":true,\"show_description\":true,\"show_header_image\":true,\"show_title\":true,\"title_color\":\"#000000\",\"title_font\":\"Gibson\",\"title_font_weight\":\"bold\"},\"share_likes\":false,\"share_following\":false,\"can_be_followed\":true},\"post\":{\"id\":\"706254160436264960\"},\"content_raw\":\"<p
+        class=\\\"npf_quote\\\">Why Write a Book? </p><div class=\\\"npf_row\\\"><figure
+        class=\\\"tmblr-full\\\" data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\"
+        data-tumblr-attribution=\\\"everythingelseistaken8:zvZ2N6iINV8tWHco69rDJA:ZCUXGW2mnvpXt\\\"><img
+        src=\\\"https://64.media.tumblr.com/6e4f08d7aa9c2b9cba5020dfd9a94c08/2419fdcbf172be7a-74/s640x960/fd54a3cd3a695fbbb19302816bfabb206a5b4f03.gif\\\"
+        data-orig-height=\\\"213\\\" data-orig-width=\\\"500\\\"></figure></div><p>1.
+        Develop skills: Writing, editing, planning, time management, self discipline.
+        </p><p>2. Self Discovery: writing can introduce a new side of yourself you
+        never knew. </p><p>3. Valuable information or expertise to share. </p><p>4.
+        Motivate, inspire, and influence others. </p><p>5. Spark dialogue. </p><p>6.
+        New source of income. </p>\",\"content\":\"<p class=\\\"npf_quote\\\">Why
+        Write a Book? </p><figure data-tumblr-media-id=\\\"0\\\" class=\\\"tmblr-full\\\"></figure><p>1.
+        Develop skills: Writing, editing, planning, time management, self discipline.
+        </p><p>2. Self Discovery: writing can introduce a new side of yourself you
+        never knew. </p><p>3. Valuable information or expertise to share. </p><p>4.
+        Motivate, inspire, and influence others. </p><p>5. Spark dialogue. </p><p>6.
+        New source of income. </p>\",\"is_current_item\":true,\"is_root_item\":true}],\"can_like\":false,\"interactability_reblog\":\"everyone\",\"can_reblog\":false,\"can_send_in_message\":true,\"can_reply\":false,\"display_avatar\":true}]}"
+  recorded_at: 2023-01-12 19:47:41 GMT
+  recorded_with: vcr/1.1.0, webmockr/0.8.2

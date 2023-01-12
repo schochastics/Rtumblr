@@ -58,10 +58,7 @@ get_blog_blocks <- function(blog,limit = 20,offset = 0,app_credentials = NULL){
   params <- list(limit = limit,offset = 0)
   oauth_head <- handle_oauth1(app_credentials,path,params)
   output_lst <- make_get_request(path = path,params = oauth_head$params,api_key = api_key,header = oauth_head$header)
-  output_lst <- output_lst[["response"]][["blocked_tumblelogs"]]
-  output_tbl <- dplyr::bind_rows(lapply(output_lst,function(l) tibble::as_tibble(lapply(l,function(x) ifelse(is.null(x), NA, x)))))
-  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
-  output_tbl
+  parse_result_oauth(output_lst,"blocked_tumblelogs")
 }
 
 #' Retrieve Blog's Likes
@@ -86,10 +83,7 @@ get_blog_likes <- function(blog,limit = 20,offset=0,after,before,api_key = NULL,
   path <- paste0("v2/blog/",blog,".tumblr.com/likes")
   params <- handle_params(list(limit = limit,offset = offset,...),after = after,before = before)
   output_lst <- make_get_request(path,params,api_key = api_key)
-  output_lst <- output_lst[["response"]][["liked_posts"]]
-  output_tbl <- dplyr::bind_rows(lapply(output_lst,function(l) tibble::as_tibble(lapply(l,function(x) ifelse(is.null(x), NA, x)))))
-  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
-  output_tbl
+  parse_result_oauth(output_lst,"liked_posts")
 }
 
 #' Retrieve following
@@ -111,10 +105,7 @@ get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
   params <- handle_params(list(limit = limit,offset = 0,...))
   oauth_head <- handle_oauth1(app_credentials,path,params)
   output_lst <- make_get_request(path = path,params = oauth_head$params,api_key = api_key,header = oauth_head$header)
-  output_lst <- output_lst[["response"]][["blogs"]]
-  output_tbl <- dplyr::bind_rows(lapply(output_lst,function(l) tibble::as_tibble(lapply(l,function(x) ifelse(is.null(x), NA, x)))))
-  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
-  output_tbl
+  parse_result_oauth(output_lst,"blogs")
 }
 
 #' Retrieve followers
@@ -135,10 +126,7 @@ get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
   params <- handle_params(list(limit = limit,offset = 0,...))
   oauth_head <- handle_oauth1(app_credentials,path,params)
   output_lst <- make_get_request(path = path,params = oauth_head$params,api_key = api_key,header = oauth_head$header)
-  output_lst <- output_lst[["response"]][["users"]]
-  output_tbl <- dplyr::bind_rows(lapply(output_lst,function(l) tibble::as_tibble(lapply(l,function(x) ifelse(is.null(x), NA, x)))))
-  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
-  output_tbl
+  parse_result_oauth(output_lst,"users")
 }
 
 #' Check If Followed By Blog
@@ -188,7 +176,8 @@ get_blog_posts <- function(blog,limit = 50,offset = 0,api_key = NULL,...){
 #' @param before the timestamp of when you'd like to see posts before
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2>
 #' @details This function uses the legacy post format since it appears to not support the new post format
-#' @return a tibble of blog posts
+#' @return a list of tibbles of blog posts by format of posts
+#' @export
 get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
   if(is.null(api_key)){
     api_key <- get_rtumblr_token_from_envvar()$consumer_key
@@ -196,9 +185,6 @@ get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
   path <- "v2/tagged"
   params <- handle_params(list(tag=tag,limit = limit,...), before = before)
   output_lst <- make_get_request(path,params,api_key)
-  # output_tbl <- dplyr::bind_rows(lapply(output_lst[["response"]],parse_blog_post_legacy))
-  # attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
-  # output_tbl
   output_parsed <- lapply(output_lst[["response"]],parse_blog_post_legacy)
   ident <- sapply(output_parsed,function(x) x[["type"]])
 
@@ -208,6 +194,5 @@ get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
     output_srt[[type]] <- dplyr::bind_rows(output_parsed[ident==type])
   }
   output_srt
-
 }
 

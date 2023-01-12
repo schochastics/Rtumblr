@@ -18,7 +18,7 @@ get_posts_tag(tag, before, limit = 20, api_key = NULL, ...)
 \item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2}}
 }
 \value{
-a tibble of blog posts
+a list of tibbles of blog posts by format of posts
 }
 \description{
 Get Posts with Tag

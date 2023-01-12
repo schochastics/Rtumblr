@@ -25,3 +25,31 @@ test_that("blog_posts", {
   expect_true(nrow(x) == 1)
   expect_true("tbl_df" %in% class(x))
 })
+
+test_that("tagged_link", {
+  vcr::use_cassette("tagged_link_default", {
+    x <- get_posts_tag("url")
+  })
+  expect_true(!is.null(x[["link"]]))
+})
+
+test_that("tagged_text", {
+  vcr::use_cassette("tagged_text_default", {
+    x <- get_posts_tag("writer")
+  })
+  expect_true(!is.null(x[["text"]]))
+})
+
+test_that("tagged_photo", {
+  vcr::use_cassette("tagged_photo_default", {
+    x <- get_posts_tag("meme")
+  })
+  expect_true(!is.null(x[["photo"]]))
+})
+
+test_that("tagged_video", {
+  vcr::use_cassette("tagged_video_default", {
+    x <- get_posts_tag("video")
+  })
+  expect_true(!is.null(x[["video"]]))
+})

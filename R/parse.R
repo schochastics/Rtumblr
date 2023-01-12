@@ -110,13 +110,38 @@ parse_blog_post_legacy <- function(post){
     output[["photo"]] <- list(photo)
 
   } else if(type=="link"){
+    output[["title"]] <- post[["title"]]
+    output[["description"]] <- post[["description"]]
+    output[["url"]] <- post[["url"]]
+    output[["link_author"]] <- post[["link_author"]]
+    output[["excerpt"]] <- post[["excerpt"]]
+    output[["publisher"]] <- post[["publisher"]]
+    photo <- dplyr::bind_rows(lapply(post[["photos"]],function(x) dplyr::bind_rows(x[["original_size"]])))
+    photo[["captions"]] <- vapply(post[["photos"]],function(x) (x[["caption"]]),character(1))
+    output[["photo"]] <- list(photo)
 
   } else if(type=="audio"){
-
+    output[["caption"]] <- post[["caption"]]
+    output[["player"]] <- post[["player"]]
+    output[["plays"]] <- post[["plays"]]
+    output[["album_art"]] <- post[["album_art"]]
+    output[["artist"]] <- post[["artist"]]
+    output[["album"]] <- post[["album"]]
+    output[["track_name"]] <- post[["track_name"]]
+    output[["track_number"]] <- post[["track_number"]]
+    output[["year"]] <- post[["year"]]
   } else if(type=="video"){
-
+    output[["caption"]] <- post[["caption"]]
+    output[["player"]] <- list(dplyr::bind_rows(post[["player"]]))
   } else{
 
   }
   output
+}
+
+parse_result_oauth <- function(output_lst,field){
+  output_lst <- output_lst[["response"]][[field]]
+  output_tbl <- dplyr::bind_rows(lapply(output_lst,function(l) tibble::as_tibble(lapply(l,function(x) ifelse(is.null(x), NA, x)))))
+  attr(output_tbl,"rate_limit") <- attr(output_lst,"rate_limit")
+  output_tbl
 }
