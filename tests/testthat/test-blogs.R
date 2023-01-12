@@ -1,0 +1,24 @@
+test_that("blog_info", {
+  vcr::use_cassette("blog_info_default", {
+    x <- get_blog_info("schochastics")
+  })
+  expect_true(nrow(x) == 1)
+  expect_true("tbl_df" %in% class(x))
+})
+
+test_that("blog_avatar", {
+  vcr::use_cassette("blog_avatar_default", {
+    x <- dim(get_blog_avatar("schochastics"))
+  })
+  expect_true(x[1] == 64)
+  expect_true(x[2] == 64)
+  expect_true(x[3] == 3)
+})
+
+test_that("blog_posts", {
+  vcr::use_cassette("blog_posts_default", {
+    x <- get_blog_posts("schochastics")
+  })
+  expect_true(nrow(x) == 1)
+  expect_true("tbl_df" %in% class(x))
+})

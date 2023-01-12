@@ -1,12 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# RTumblr
+# Rtumblr
 
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/RTumblr)](https://CRAN.R-project.org/package=RTumblr)
+status](https://www.r-pkg.org/badges/version/Rtumblr)](https://CRAN.R-project.org/package=Rtumblr)
+[![R-CMD-check](https://github.com/schochastics/Rtumblr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/schochastics/Rtumblr/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/schochastics/Rtumblr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/schochastics/Rtumblr?branch=main)
 <!-- badges: end -->
 
 RTumblr is a wrapper for the official Tumblr API. (An [existing

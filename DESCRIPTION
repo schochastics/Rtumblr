@@ -15,3 +15,7 @@ Imports:
     dplyr,
     httr,
     tibble
+Suggests: 
+    testthat (>= 3.0.0),
+    vcr (>= 0.6.0)
+Config/testthat/edition: 3

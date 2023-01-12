@@ -1,0 +1,72 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://assets.tumblr.com/images/default_avatar/pyramid_closed_64.png
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      accept-ranges: bytes
+      access-control-allow-origin: '*'
+      cache-control:
+      - max-age=315360000
+      - immutable
+      content-length: '1951'
+      content-type: image/png
+      date: Thu, 12 Jan 2023 11:32:15 GMT
+      etag: '"5f9e40ff-79f"'
+      expires: Thu, 31 Dec 2037 23:55:55 GMT
+      last-modified: Sun, 01 Nov 2020 05:00:47 GMT
+      server: nginx
+      strict-transport-security:
+      - max-age=31536000; preload
+      - max-age=31536000; preload
+      timing-allow-origin: '*'
+      x-nc: HIT hhn 2
+    body:
+      encoding: ''
+      file: no
+      base64_string: |-
+        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
+  recorded_at: 2023-01-12 11:32:15 GMT
+  recorded_with: vcr/1.1.0, webmockr/0.8.2
