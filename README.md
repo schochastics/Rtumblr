@@ -24,9 +24,20 @@ You can install the development version of RTumblr like so:
 devtools::install_github("schochastics/RTumblr")
 ```
 
-## Example
+## API keys
 
-This is a basic example which shows you how to solve a common problem:
+You need to register an app here: <https://www.tumblr.com/oauth/apps>
+Then, create an environment variable called “RTUMBLR_TOKEN” (for
+instance in `.Renviron`) from the consumer_key and the consumer_secret
+as follows. If you have
+
+``` r
+consumer_key = 123456789
+consumer_secret = abcdefghi
+```
+
+Then your environment variable RTUMBLR_TOKEN should be
+`123456789;abcdefghi`
 
 ``` r
 library(RTumblr)
