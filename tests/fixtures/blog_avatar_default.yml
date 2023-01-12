@@ -21,7 +21,7 @@ http_interactions:
       - immutable
       content-length: '1951'
       content-type: image/png
-      date: Thu, 12 Jan 2023 11:32:15 GMT
+      date: Thu, 12 Jan 2023 11:59:20 GMT
       etag: '"5f9e40ff-79f"'
       expires: Thu, 31 Dec 2037 23:55:55 GMT
       last-modified: Sun, 01 Nov 2020 05:00:47 GMT
@@ -68,5 +68,5 @@ http_interactions:
         NA+ShbHJB72v49CPYZraEmMha7PL8OuR1A1IUIYj60xyLXwluVWbXvKKz1hwG91Q6x0yy0jz2pUUR+HH
         gCsmohliOhBucCihxwr6ZQ9oWpL7Zw7g8ClFkIg8bSqSN7Zg73qtQwnhEwzQlFn+YchclK+cQSY9Wnrp
         rwRQAigB/JIA/gsyqiAB23SzhAAAAABJRU5ErkJggg==
-  recorded_at: 2023-01-12 11:32:15 GMT
+  recorded_at: 2023-01-12 11:59:20 GMT
   recorded_with: vcr/1.1.0, webmockr/0.8.2

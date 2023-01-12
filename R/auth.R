@@ -30,10 +30,18 @@ oauth_encode1 <- function (x){
   paste0(chars, collapse = "")
 }
 
-get_rtumblr_token_from_envvar <- function(name = "RTUMBLR_TOKEN"){
+get_rtumblr_token_from_envvar <- function(name = "RTUMBLR_TOKEN",check_stop=TRUE){
   var <- Sys.getenv(name)
   if(var==""){
-    stop("No tumblr token found in env variables",call.=FALSE)
+    if(check_stop){
+      stop("No tumblr token found in env variables",call.=FALSE)
+    } else{
+      message("You should do software testing with the `RTUMBLR_TOKEN` envvar!")
+      return(list(
+        consumer_key="abcdefghijkl",
+        consumer_secret="aaabbbcccddd"
+      ))
+    }
   }
   var_splt <- strsplit(var,";")[[1]]
   app_credentials <- list(

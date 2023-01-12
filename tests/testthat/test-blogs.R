@@ -1,6 +1,8 @@
+fake_token <- Rtumblr:::get_rtumblr_token_from_envvar(check_stop = FALSE)$consumer_key
+
 test_that("blog_info", {
   vcr::use_cassette("blog_info_default", {
-    x <- get_blog_info("schochastics")
+    x <- get_blog_info("schochastics",api_key = fake_token)
   })
   expect_true(nrow(x) == 1)
   expect_true("tbl_df" %in% class(x))
@@ -17,7 +19,7 @@ test_that("blog_avatar", {
 
 test_that("blog_posts", {
   vcr::use_cassette("blog_posts_default", {
-    x <- get_blog_posts("schochastics")
+    x <- get_blog_posts("schochastics",api_key = fake_token)
   })
   expect_true(nrow(x) == 1)
   expect_true("tbl_df" %in% class(x))
