@@ -21,3 +21,8 @@ tibble of blocked blogs
 \description{
 Get the blogs that the requested blog is currently blocking. The requesting user must be an admin of the blog to retrieve this list.  Note that this endpoint is rate limited to 60 requests per minute.
 }
+\examples{
+\dontrun{
+get_blog_blocks(blog = <<your-blog-name>>)
+}
+}

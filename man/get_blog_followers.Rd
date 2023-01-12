@@ -24,3 +24,8 @@ a tibble of blogs
 This method can be used to retrieve the publicly exposed list of blogs that follow a blog, in order from most recently-followed to first.
 \strong{Only works with your own blog}
 }
+\examples{
+\dontrun{
+get_blog_followers(blog = <<your-blog-name>>)
+}
+}

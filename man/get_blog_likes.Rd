@@ -41,3 +41,8 @@ If you provide more than one of these options together you will get an error.
 You can still use limit with any of those three options to limit your result set.
 When using the offset parameter the maximum limit on the offset is 1000. If you would like to get more results than that use either before or after.
 }
+\examples{
+\dontrun{
+get_blog_likes(blog = <<your-blog-name>>)
+}
+}

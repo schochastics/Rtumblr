@@ -48,7 +48,10 @@ get_blog_avatar <- function(blog,size=64){
 #' @param offset block number to start at (default 0)
 #' @return tibble of blocked blogs
 #' @export
-#'
+#' @examples
+#' \dontrun{
+#' get_blog_blocks(blog = <<your-blog-name>>)
+#' }
 get_blog_blocks <- function(blog,limit = 20,offset = 0,app_credentials = NULL){
   api_key <- NULL
   if(is.null(app_credentials)){
@@ -76,6 +79,10 @@ get_blog_blocks <- function(blog,limit = 20,offset = 0,app_credentials = NULL){
 #' When using the offset parameter the maximum limit on the offset is 1000. If you would like to get more results than that use either before or after.
 #' @return tibble of liked posts
 #' @export
+#' @examples
+#' \dontrun{
+#' get_blog_likes(blog = <<your-blog-name>>)
+#' }
 get_blog_likes <- function(blog,limit = 20,offset=0,after,before,api_key = NULL,...){
   if(is.null(api_key)){
     api_key <- get_rtumblr_token_from_envvar()$consumer_key
@@ -96,6 +103,10 @@ get_blog_likes <- function(blog,limit = 20,offset=0,after,before,api_key = NULL,
 #'
 #' @return a tibble of blogs
 #' @export
+#' @examples
+#' \dontrun{
+#' get_blog_following(blog = <<your-blog-name>>)
+#' }
 get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...){
   api_key <- NULL
   if(is.null(app_credentials)){
@@ -117,6 +128,10 @@ get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #'
 #' @return a tibble of blogs
 #' @export
+#' @examples
+#' \dontrun{
+#' get_blog_followers(blog = <<your-blog-name>>)
+#' }
 get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...){
   api_key <- NULL
   if(is.null(app_credentials)){
@@ -178,6 +193,10 @@ get_blog_posts <- function(blog,limit = 50,offset = 0,api_key = NULL,...){
 #' @details This function uses the legacy post format since it appears to not support the new post format
 #' @return a list of tibbles of blog posts by format of posts
 #' @export
+#' @examples
+#' \dontrun{
+#' get_posts_tag(tag="meme")
+#' }
 get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
   if(is.null(api_key)){
     api_key <- get_rtumblr_token_from_envvar()$consumer_key

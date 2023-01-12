@@ -26,3 +26,8 @@ Get Posts with Tag
 \details{
 This function uses the legacy post format since it appears to not support the new post format
 }
+\examples{
+\dontrun{
+get_posts_tag(tag="meme")
+}
+}

@@ -39,7 +39,23 @@ consumer_secret = abcdefghi
 Then your environment variable RTUMBLR_TOKEN should be
 `123456789;abcdefghi`
 
-``` r
-library(RTumblr)
-## basic example code
-```
+## Usage
+
+Most API endpoints only work with your own account. The ones already
+implemented include:
+
+- `get_blog_blocks()`: get a list of accounts you blocked
+- `get_blog_likes()`: get a list of posts you liked
+- `get_blog_followers()`: get your followers
+- `get_blog_following()`: get accounts you follow
+
+Implemented endpoints that work with any account are:
+
+- `get_blog_avatar()`: get the avatar of a blog
+- `get_blog_info()`: get the general info of a blog
+- `get_blog_posts()`: get the posts of a blog
+- `get_posts_tag()`: get posts with a specific tag.
+
+All function return a tibble (or list of tibble). To get information
+about columns, see the official API documentation:
+<https://www.tumblr.com/docs/en/api/v2>
