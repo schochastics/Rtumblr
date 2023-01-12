@@ -18,7 +18,7 @@ http_interactions:
       content-encoding: gzip
       content-length: '617'
       content-type: application/json; charset=utf-8
-      date: Thu, 12 Jan 2023 11:32:14 GMT
+      date: Thu, 12 Jan 2023 12:29:30 GMT
       p3p: 'CP="Tumblr''s privacy policy is available here: https://www.tumblr.com/policy/en/privacy"'
       server: nginx
       strict-transport-security: max-age=31536000; preload
@@ -27,12 +27,12 @@ http_interactions:
       - Accept-Encoding
       x-content-type-options: nosniff
       x-ratelimit-perday-limit: '5000'
-      x-ratelimit-perday-remaining: '4974'
-      x-ratelimit-perday-reset: '25634'
+      x-ratelimit-perday-remaining: '4972'
+      x-ratelimit-perday-reset: '22257'
       x-ratelimit-perhour-limit: '1000'
-      x-ratelimit-perhour-remaining: '997'
-      x-ratelimit-perhour-reset: '543'
-      x-rid: 74b66c47ed2317a58b2f45837b0d3302
+      x-ratelimit-perhour-remaining: '999'
+      x-ratelimit-perhour-reset: '3600'
+      x-rid: 8fc13119c86097fa20a14e712fdb6356
       x-robots-tag: noindex, nofollow
       x-ua-compatible: IE=Edge,chrome=1
     body:
@@ -41,5 +41,5 @@ http_interactions:
       string: '{"meta":{"status":200,"msg":"OK"},"response":{"blog":{"ask":false,"ask_anon":false,"ask_page_title":"Ask
         me anything","asks_allow_media":true,"avatar":[{"width":512,"height":512,"url":"https://assets.tumblr.com/images/default_avatar/pyramid_closed_512.png"},{"width":128,"height":128,"url":"https://assets.tumblr.com/images/default_avatar/pyramid_closed_128.png"},{"width":96,"height":96,"url":"https://assets.tumblr.com/images/default_avatar/pyramid_closed_96.png"},{"width":64,"height":64,"url":"https://assets.tumblr.com/images/default_avatar/pyramid_closed_64.png"}],"can_chat":false,"can_subscribe":false,"description":"","is_nsfw":false,"likes":0,"name":"schochastics","posts":1,"share_likes":true,"subscribed":false,"theme":{"avatar_shape":"circle","background_color":"#FFFFFF","body_font":"Helvetica
         Neue","header_bounds":"","header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_06.png?_v=c5e9c9bdca5f67be80d91514a36509cc","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_06_focused_v3.png?_v=c5e9c9bdca5f67be80d91514a36509cc","header_image_poster":"","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_06_focused_v3.png?_v=c5e9c9bdca5f67be80d91514a36509cc","header_stretch":true,"link_color":"#00B8FF","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#000000","title_font":"Gibson","title_font_weight":"bold"},"title":"Untitled","total_posts":1,"updated":1673522888,"url":"https://www.tumblr.com/blog/view/schochastics","uuid":"t:W0B0GW4Q-3mL3MjuLsnlHw"}}}'
-  recorded_at: 2023-01-12 11:32:14 GMT
+  recorded_at: 2023-01-12 12:29:31 GMT
   recorded_with: vcr/1.1.0, webmockr/0.8.2
