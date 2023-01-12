@@ -38,7 +38,7 @@ get_blog_avatar <- function(blog,size=64){
     stop("size must be one of 16, 24, 30, 40, 48, 64, 96, 128, 512")
   }
   path <- paste0("v2/blog/",blog,".tumblr.com/avatar/",size)
-  make_get_request(path,params = list(),api_key = NULL)
+  make_get_request(path,params = list())
 }
 
 #' Retrieve Blogs Blocks
