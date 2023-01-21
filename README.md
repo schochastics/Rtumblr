@@ -12,16 +12,16 @@ status](https://www.r-pkg.org/badges/version/Rtumblr)](https://CRAN.R-project.or
 coverage](https://codecov.io/gh/schochastics/Rtumblr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/schochastics/Rtumblr?branch=main)
 <!-- badges: end -->
 
-RTumblr is a wrapper for the official Tumblr API. (An [existing
+Rtumblr is a wrapper for the official tumblr API. (An [existing
 CRAN](https://cran.r-project.org/web/packages/tumblR/index.html) package
 has been archived)
 
 ## Installation
 
-You can install the development version of RTumblr like so:
+You can install the development version of Rtumblr like so:
 
 ``` r
-devtools::install_github("schochastics/RTumblr")
+devtools::install_github("schochastics/Rtumblr")
 ```
 
 ## API keys
