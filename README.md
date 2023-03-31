@@ -13,8 +13,8 @@ coverage](https://codecov.io/gh/schochastics/Rtumblr/branch/main/graph/badge.svg
 <!-- badges: end -->
 
 Rtumblr is a wrapper for the official tumblr API. (An [existing
-CRAN](https://cran.r-project.org/web/packages/tumblR/index.html) package
-has been archived)
+CRAN](https://CRAN.R-project.org/package=tumblR) package has been
+archived)
 
 ## Installation
 

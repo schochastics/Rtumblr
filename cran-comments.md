@@ -1,5 +1,6 @@
-## Initial submission 0.1.0
+## Resubmission of Initial submission 0.1.0
 
+Fixed quotes around "Tumblr" and the canonical URL
 *(dontrun examples are used to not make unnecessary API calls)*
 
 # Test environments
