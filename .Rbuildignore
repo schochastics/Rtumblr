@@ -6,3 +6,4 @@
 ^\.httr-oauth$
 ^\.github$
 codecov.yml
+^cran-comments\.md$

@@ -21,3 +21,8 @@ logical
 Check If Followed By Blog
 This method can be used to check if one of your blogs is followed by another blog.
 }
+\examples{
+\dontrun{
+get_blog_followed_by(blog = <<your-blog-name>>, query = <<blog-to-check>>)
+}
+}

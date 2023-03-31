@@ -127,11 +127,11 @@ get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2>
 #'
 #' @return a tibble of blogs
-#' @export
 #' @examples
 #' \dontrun{
 #' get_blog_followers(blog = <<your-blog-name>>)
 #' }
+#' @export
 get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...){
   api_key <- NULL
   if(is.null(app_credentials)){
@@ -149,6 +149,10 @@ get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #'
 #' @inheritParams get_blog_following
 #' @param query string. The name of the blog that may be following your blog
+#' @examples
+#' \dontrun{
+#' get_blog_followed_by(blog = <<your-blog-name>>, query = <<blog-to-check>>)
+#' }
 #' @return logical
 get_blog_followed_by <- function(blog,query,app_credentials = NULL){
   api_key <- NULL
@@ -171,6 +175,11 @@ get_blog_followed_by <- function(blog,query,app_credentials = NULL){
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2>
 #' @details this function uses the new post format (npf: <https://www.tumblr.com/docs/npf>)
 #' @return a tibble of blog posts
+#' @examples
+#' \dontrun{
+#' get_blog_posts(blog = <<blog-name>>)
+#' }
+
 #' @export
 get_blog_posts <- function(blog,limit = 50,offset = 0,api_key = NULL,...){
   if(is.null(api_key)){

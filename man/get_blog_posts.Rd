@@ -26,3 +26,8 @@ Retrieve Published Posts
 \details{
 this function uses the new post format (npf: \url{https://www.tumblr.com/docs/npf})
 }
+\examples{
+\dontrun{
+get_blog_posts(blog = <<blog-name>>)
+}
+}
