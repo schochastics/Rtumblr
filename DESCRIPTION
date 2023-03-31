@@ -1,5 +1,5 @@
 Package: Rtumblr
-Title: Collecting and Analyzing 'Tumblr Data
+Title: Collecting and Analyzing Tumblr Data
 Version: 0.1.0
 Authors@R: 
     person("David", "Schoch", , "david@schochastics.net", role = c("aut", "cre"),
