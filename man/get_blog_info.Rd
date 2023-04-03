@@ -9,7 +9,7 @@ get_blog_info(blog, api_key = NULL)
 \arguments{
 \item{blog}{name of the blog}
 
-\item{api_key}{app consumer key. If NULL, attempts to load from an env variable}
+\item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 }
 \value{
 tibble of information about  blog

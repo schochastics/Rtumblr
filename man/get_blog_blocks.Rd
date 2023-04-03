@@ -23,6 +23,7 @@ Get the blogs that the requested blog is currently blocking. The requesting user
 }
 \examples{
 \dontrun{
-get_blog_blocks(blog = <<your-blog-name>>)
+# replace "your-blog-name" with your Tumblr username
+get_blog_blocks(blog = "your-blog-name")
 }
 }

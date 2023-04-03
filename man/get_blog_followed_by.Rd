@@ -23,6 +23,7 @@ This method can be used to check if one of your blogs is followed by another blo
 }
 \examples{
 \dontrun{
-get_blog_followed_by(blog = <<your-blog-name>>, query = <<blog-to-check>>)
+# replace "your-blog-name" with your Tumblr username
+get_blog_followed_by(blog = "your-blog-name", query = "blog-to-check")
 }
 }

@@ -3,7 +3,7 @@
 #' This method returns general information about the blog, such as the title, number of posts, and other high-level data.
 #'
 #' @param blog name of the blog
-#' @param api_key app consumer key. If NULL, attempts to load from an env variable
+#' @param api_key app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN
 #'
 #' @return tibble of information about  blog
 #' @export
@@ -50,7 +50,8 @@ get_blog_avatar <- function(blog,size=64){
 #' @export
 #' @examples
 #' \dontrun{
-#' get_blog_blocks(blog = <<your-blog-name>>)
+#' # replace "your-blog-name" with your Tumblr username
+#' get_blog_blocks(blog = "your-blog-name")
 #' }
 get_blog_blocks <- function(blog,limit = 20,offset = 0,app_credentials = NULL){
   api_key <- NULL
@@ -81,7 +82,8 @@ get_blog_blocks <- function(blog,limit = 20,offset = 0,app_credentials = NULL){
 #' @export
 #' @examples
 #' \dontrun{
-#' get_blog_likes(blog = <<your-blog-name>>)
+#' # replace "your-blog-name" with your Tumblr username
+#' get_blog_likes(blog = "your-blog-name")
 #' }
 get_blog_likes <- function(blog,limit = 20,offset=0,after,before,api_key = NULL,...){
   if(is.null(api_key)){
@@ -105,7 +107,8 @@ get_blog_likes <- function(blog,limit = 20,offset=0,after,before,api_key = NULL,
 #' @export
 #' @examples
 #' \dontrun{
-#' get_blog_following(blog = <<your-blog-name>>)
+#' # replace "your-blog-name" with your Tumblr username
+#' get_blog_following(blog = "your-blog-name")
 #' }
 get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...){
   api_key <- NULL
@@ -129,7 +132,8 @@ get_blog_following <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #' @return a tibble of blogs
 #' @examples
 #' \dontrun{
-#' get_blog_followers(blog = <<your-blog-name>>)
+#' # replace "your-blog-name" with your Tumblr username
+#' get_blog_followers(blog = "your-blog-name")
 #' }
 #' @export
 get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...){
@@ -151,7 +155,8 @@ get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #' @param query string. The name of the blog that may be following your blog
 #' @examples
 #' \dontrun{
-#' get_blog_followed_by(blog = <<your-blog-name>>, query = <<blog-to-check>>)
+#' # replace "your-blog-name" with your Tumblr username
+#' get_blog_followed_by(blog = "your-blog-name", query = "blog-to-check")
 #' }
 #' @return logical
 get_blog_followed_by <- function(blog,query,app_credentials = NULL){
@@ -177,7 +182,8 @@ get_blog_followed_by <- function(blog,query,app_credentials = NULL){
 #' @return a tibble of blog posts
 #' @examples
 #' \dontrun{
-#' get_blog_posts(blog = <<blog-name>>)
+#' # replace "blog-name" with a Tumblr username
+#' get_blog_posts(blog = "blog-name")
 #' }
 
 #' @export

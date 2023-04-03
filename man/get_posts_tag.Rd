@@ -13,7 +13,7 @@ get_posts_tag(tag, before, limit = 20, api_key = NULL, ...)
 
 \item{limit}{The number of results to return: 1–50}
 
-\item{api_key}{app consumer key. If NULL, attempts to load from an env variable}
+\item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
 \item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2}}
 }

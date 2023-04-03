@@ -13,7 +13,7 @@ get_blog_posts(blog, limit = 50, offset = 0, api_key = NULL, ...)
 
 \item{offset}{post index to start at}
 
-\item{api_key}{app consumer key. If NULL, attempts to load from an env variable}
+\item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
 \item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2}}
 }
@@ -28,6 +28,7 @@ this function uses the new post format (npf: \url{https://www.tumblr.com/docs/np
 }
 \examples{
 \dontrun{
-get_blog_posts(blog = <<blog-name>>)
+# replace "blog-name" with a Tumblr username
+get_blog_posts(blog = "blog-name")
 }
 }

@@ -1,6 +1,6 @@
 ## Resubmission of Initial submission 0.1.0
 
-Fixed quotes around "Tumblr" and the canonical URL
+Parameters in examples are now proper strings (but cannot be executed without supplying the Tumblr username of the user)
 *(dontrun examples are used to not make unnecessary API calls)*
 
 # Test environments

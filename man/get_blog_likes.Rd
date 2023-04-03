@@ -25,7 +25,7 @@ get_blog_likes(
 
 \item{before}{integer. Retrieve posts liked before the specified timestamp}
 
-\item{api_key}{app consumer key. If NULL, attempts to load from an env variable}
+\item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
 \item{...}{further parameters as described here: \url{https://www.tumblr.com/docs/en/api/v2}}
 }
@@ -43,6 +43,7 @@ When using the offset parameter the maximum limit on the offset is 1000. If you 
 }
 \examples{
 \dontrun{
-get_blog_likes(blog = <<your-blog-name>>)
+# replace "your-blog-name" with your Tumblr username
+get_blog_likes(blog = "your-blog-name")
 }
 }

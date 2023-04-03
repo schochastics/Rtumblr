@@ -26,6 +26,7 @@ This method can be used to retrieve the publicly exposed list of blogs that a bl
 }
 \examples{
 \dontrun{
-get_blog_following(blog = <<your-blog-name>>)
+# replace "your-blog-name" with your Tumblr username
+get_blog_following(blog = "your-blog-name")
 }
 }
