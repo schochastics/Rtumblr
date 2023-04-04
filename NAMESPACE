@@ -2,6 +2,7 @@
 
 export(get_blog_avatar)
 export(get_blog_blocks)
+export(get_blog_followed_by)
 export(get_blog_followers)
 export(get_blog_following)
 export(get_blog_info)

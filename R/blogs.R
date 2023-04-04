@@ -159,6 +159,7 @@ get_blog_followers <- function(blog,limit = 50,offset=0,app_credentials=NULL,...
 #' get_blog_followed_by(blog = "your-blog-name", query = "blog-to-check")
 #' }
 #' @return logical
+#' @export
 get_blog_followed_by <- function(blog,query,app_credentials = NULL){
   api_key <- NULL
   if(is.null(app_credentials)){
