@@ -1,14 +1,4 @@
-## Resubmission of Initial submission 0.1.0
+## Update from 0.1.0 to 0.1.1
 
-Parameters in examples are now proper strings (but cannot be executed without supplying the Tumblr username of the user)
+* Updates due to changes in the `vcr` package.
 *(dontrun examples are used to not make unnecessary API calls)*
-
-# Test environments
-* ubuntu 22.04, R 4.2.2
-* win-builder (devel and release)
-
-## R CMD check results
-
-0 errors | 0 warnings | 1 note
-
-* This is a new release.
