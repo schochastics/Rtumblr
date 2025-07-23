@@ -18,6 +18,7 @@ Imports:
     httr,
     tibble
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    vcr (>= 0.6.0)
 Remotes: ropensci/vcr
 Config/testthat/edition: 3
