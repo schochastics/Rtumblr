@@ -1,0 +1,54 @@
+# Retrieve Blogs Blocks
+
+Get the blogs that the requested blog is currently blocking. The
+requesting user must be an admin of the blog to retrieve this list. Note
+that this endpoint is rate limited to 60 requests per minute.
+
+## Usage
+
+``` r
+get_blog_blocks(
+  blog,
+  limit = 20,
+  offset = 0,
+  n = limit,
+  app_credentials = NULL
+)
+```
+
+## Arguments
+
+- blog:
+
+  name of the blog
+
+- limit:
+
+  number of blocks to retrieve per request (1-20)
+
+- offset:
+
+  block number to start at (default 0)
+
+- n:
+
+  maximum number of blocks to retrieve across pages (default `limit`,
+  i.e. a single page). Use `Inf` to retrieve all.
+
+- app_credentials:
+
+  a named list containing the consumer key and consumer secret. If NULL,
+  attempts to load from an env variable
+
+## Value
+
+tibble of blocked blogs
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+# replace "your-blog-name" with your Tumblr username
+get_blog_blocks(blog = "your-blog-name")
+} # }
+```

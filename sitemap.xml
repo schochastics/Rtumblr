@@ -13,7 +13,15 @@
 <url><loc>https://schochastics.github.io/Rtumblr/reference/get_blog_info.html</loc></url>
 <url><loc>https://schochastics.github.io/Rtumblr/reference/get_blog_likes.html</loc></url>
 <url><loc>https://schochastics.github.io/Rtumblr/reference/get_blog_posts.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_dashboard.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_post.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_post_notes.html</loc></url>
 <url><loc>https://schochastics.github.io/Rtumblr/reference/get_posts_tag.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_user_following.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_user_info.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_user_likes.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/get_user_limits.html</loc></url>
 <url><loc>https://schochastics.github.io/Rtumblr/reference/index.html</loc></url>
+<url><loc>https://schochastics.github.io/Rtumblr/reference/rtumblr_auth.html</loc></url>
 </urlset>
 
