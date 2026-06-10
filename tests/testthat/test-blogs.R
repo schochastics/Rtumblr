@@ -2,44 +2,44 @@ fake_token <- Rtumblr:::get_rtumblr_token_from_envvar(check_stop = FALSE)
 fake_api <- fake_token$consumer_key
 
 test_that("blog_info", {
-  vcr::use_cassette("blog_info_default", {
-    x <- get_blog_info("schochastics",api_key = fake_api)
+  httptest2::with_mock_dir("api_fixtures/blog_info", {
+    x <- get_blog_info("schochastics", api_key = fake_api)
   })
   expect_true(nrow(x) == 1)
   expect_true("tbl_df" %in% class(x))
 })
 
 test_that("blog_posts", {
-  vcr::use_cassette("blog_posts_default", {
-    x <- get_blog_posts("schochastics",api_key = fake_api)
+  httptest2::with_mock_dir("api_fixtures/blog_posts", {
+    x <- get_blog_posts("schochastics", api_key = fake_api)
   })
   expect_true(nrow(x) == 1)
   expect_true("tbl_df" %in% class(x))
 })
 
 test_that("tagged_link", {
-  vcr::use_cassette("tagged_link_default", {
+  httptest2::with_mock_dir("api_fixtures/tagged_link", {
     x <- get_posts_tag("url")
   })
   expect_true(!is.null(x[["link"]]))
 })
 
 test_that("tagged_text", {
-  vcr::use_cassette("tagged_text_default", {
+  httptest2::with_mock_dir("api_fixtures/tagged_text", {
     x <- get_posts_tag("writer")
   })
   expect_true(!is.null(x[["text"]]))
 })
 
 test_that("tagged_photo", {
-  vcr::use_cassette("tagged_photo_default", {
+  httptest2::with_mock_dir("api_fixtures/tagged_photo", {
     x <- get_posts_tag("meme")
   })
   expect_true(!is.null(x[["photo"]]))
 })
 
 test_that("tagged_video", {
-  vcr::use_cassette("tagged_video_default", {
+  httptest2::with_mock_dir("api_fixtures/tagged_video", {
     x <- get_posts_tag("video")
   })
   expect_true(!is.null(x[["video"]]))

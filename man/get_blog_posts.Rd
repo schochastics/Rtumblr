@@ -4,14 +4,16 @@
 \alias{get_blog_posts}
 \title{Retrieve Published Posts}
 \usage{
-get_blog_posts(blog, limit = 50, offset = 0, api_key = NULL, ...)
+get_blog_posts(blog, limit = 20, offset = 0, n = limit, api_key = NULL, ...)
 }
 \arguments{
 \item{blog}{name of the blog}
 
-\item{limit}{The number of results to return: 1–50}
+\item{limit}{The number of results to return per request: 1-20}
 
 \item{offset}{post index to start at}
+
+\item{n}{maximum number of posts to retrieve across pages (default \code{limit}, i.e. a single page). Use \code{Inf} to retrieve all posts of the blog.}
 
 \item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
@@ -24,11 +26,15 @@ a tibble of blog posts
 Retrieve Published Posts
 }
 \details{
-this function uses the new post format (npf: \url{https://www.tumblr.com/docs/npf})
+this function uses the new post format (npf: \url{https://www.tumblr.com/docs/npf}).
+Pagination is handled automatically: it pages through \code{offset} up to the API cap of 1000,
+then continues via the \code{before} timestamp, until \code{n} posts are collected or the blog is exhausted.
 }
 \examples{
 \dontrun{
 # replace "blog-name" with a Tumblr username
 get_blog_posts(blog = "blog-name")
+# retrieve all posts of a blog
+get_blog_posts(blog = "blog-name", n = Inf)
 }
 }

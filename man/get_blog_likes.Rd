@@ -8,6 +8,7 @@ get_blog_likes(
   blog,
   limit = 20,
   offset = 0,
+  n = limit,
   after,
   before,
   api_key = NULL,
@@ -17,9 +18,11 @@ get_blog_likes(
 \arguments{
 \item{blog}{name of the blog}
 
-\item{limit}{The number of results to return: 1–50}
+\item{limit}{The number of results to return per request: 1-20}
 
 \item{offset}{post index to start at}
+
+\item{n}{maximum number of posts to retrieve across pages (default \code{limit}, i.e. a single page). Use \code{Inf} to retrieve all posts of the blog.}
 
 \item{after}{integer. Retrieve posts liked after the specified timestamp}
 

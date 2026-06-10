@@ -4,14 +4,16 @@
 \alias{get_posts_tag}
 \title{Get Posts with Tag}
 \usage{
-get_posts_tag(tag, before, limit = 20, api_key = NULL, ...)
+get_posts_tag(tag, before, limit = 20, n = limit, api_key = NULL, ...)
 }
 \arguments{
 \item{tag}{tag to search for}
 
 \item{before}{the timestamp of when you'd like to see posts before}
 
-\item{limit}{The number of results to return: 1–50}
+\item{limit}{number of results to return per request: 1-20}
+
+\item{n}{maximum number of posts to retrieve across pages (default \code{limit}, i.e. a single page). Use \code{Inf} to keep paging.}
 
 \item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
@@ -24,10 +26,14 @@ a list of tibbles of blog posts by format of posts
 Get Posts with Tag
 }
 \details{
-This function uses the legacy post format since it appears to not support the new post format
+This function uses the legacy post format since it appears to not support the new post format.
+The \verb{/tagged} endpoint does not support \code{offset}; pagination is done with the \code{before}
+timestamp, which is handled automatically when \code{n} is larger than \code{limit}.
 }
 \examples{
 \dontrun{
 get_posts_tag(tag="meme")
+# retrieve up to 100 posts across pages
+get_posts_tag(tag="meme", n = 100)
 }
 }
