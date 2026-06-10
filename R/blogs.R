@@ -287,22 +287,54 @@ get_post_notes <- function(blog,post_id,mode = "all",before_timestamp = NULL,api
 #' @inheritParams get_blog_posts
 #' @param tag tag to search for
 #' @param before the timestamp of when you'd like to see posts before
+#' @param limit number of results to return per request: 1-20
+#' @param n maximum number of posts to retrieve across pages (default `limit`, i.e. a single page). Use `Inf` to keep paging.
 #' @param ... further parameters as described here: <https://www.tumblr.com/docs/en/api/v2>
-#' @details This function uses the legacy post format since it appears to not support the new post format
+#' @details This function uses the legacy post format since it appears to not support the new post format.
+#' The `/tagged` endpoint does not support `offset`; pagination is done with the `before`
+#' timestamp, which is handled automatically when `n` is larger than `limit`.
 #' @return a list of tibbles of blog posts by format of posts
 #' @export
 #' @examples
 #' \dontrun{
 #' get_posts_tag(tag="meme")
+#' # retrieve up to 100 posts across pages
+#' get_posts_tag(tag="meme", n = 100)
 #' }
-get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
+get_posts_tag <- function(tag,before,limit = 20,n = limit,api_key = NULL,...){
   if(is.null(api_key)){
     api_key <- get_rtumblr_token_from_envvar()$consumer_key
   }
   path <- "v2/tagged"
-  params <- handle_params(list(tag=tag,limit = limit,...), before = before)
-  output_lst <- make_get_request(path,params,api_key)
-  output_parsed <- lapply(output_lst[["response"]],parse_blog_post_legacy)
+  extra <- list(...)
+  current_before <- if(missing(before)) NULL else before
+  collected <- list()
+  seen <- character()
+  output_lst <- NULL
+  repeat{
+    remaining <- n - length(collected)
+    if(remaining <= 0) break
+    params <- c(list(tag = tag,limit = min(limit,20,remaining)),extra)
+    if(!is.null(current_before)) params$before <- current_before
+    output_lst <- make_get_request(path,params,api_key)
+    items <- output_lst[["response"]]
+    if(length(items) == 0) break
+    # the tagged feed can return duplicates across the before boundary
+    ids <- vapply(items,function(x) as.character(x[["id_string"]] %||% x[["id"]] %||% ""),character(1))
+    keep <- !(ids %in% seen)
+    items <- items[keep]
+    if(length(items) == 0) break
+    seen <- c(seen,ids[keep])
+    collected <- c(collected,items)
+    ts <- vapply(items,function(x) as.numeric(x[["timestamp"]] %||% NA_real_),numeric(1))
+    if(all(is.na(ts))) break
+    next_before <- min(ts,na.rm = TRUE)
+    # stop if we cannot page back any further
+    if(!is.null(current_before) && next_before >= current_before) break
+    current_before <- next_before
+  }
+  if(length(collected) > n) collected <- collected[seq_len(n)]
+  output_parsed <- lapply(collected,parse_blog_post_legacy)
   ident <- sapply(output_parsed,function(x) x[["type"]])
 
   output_srt <- vector("list",5)
@@ -310,5 +342,6 @@ get_posts_tag <- function(tag,before,limit = 20,api_key = NULL,...){
   for(type in names(output_srt)){
     output_srt[[type]] <- dplyr::bind_rows(output_parsed[ident==type])
   }
+  attr(output_srt,"rate_limit") <- attr(output_lst,"rate_limit")
   output_srt
 }
