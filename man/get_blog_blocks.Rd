@@ -4,14 +4,22 @@
 \alias{get_blog_blocks}
 \title{Retrieve Blogs Blocks}
 \usage{
-get_blog_blocks(blog, limit = 20, offset = 0, app_credentials = NULL)
+get_blog_blocks(
+  blog,
+  limit = 20,
+  offset = 0,
+  n = limit,
+  app_credentials = NULL
+)
 }
 \arguments{
 \item{blog}{name of the blog}
 
-\item{limit}{number of blocks to retrieve (1-20)}
+\item{limit}{number of blocks to retrieve per request (1-20)}
 
 \item{offset}{block number to start at (default 0)}
+
+\item{n}{maximum number of blocks to retrieve across pages (default \code{limit}, i.e. a single page). Use \code{Inf} to retrieve all.}
 
 \item{app_credentials}{a named list containing the consumer key and consumer secret. If NULL, attempts to load from an env variable}
 }

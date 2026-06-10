@@ -1,6 +1,6 @@
 Package: Rtumblr
 Title: Collecting and Analyzing 'Tumblr' Data
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: 
     person("David", "Schoch", , "david@schochastics.net", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2952-4812"))
@@ -10,14 +10,17 @@ URL: https://github.com/schochastics/Rtumblr/, https://schochastics.github.io/Rt
 BugReports: https://github.com/schochastics/Rtumblr/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
-Imports: 
+Imports:
     dplyr,
-    httr,
+    httr2,
+    openssl,
     tibble
-Suggests: 
+Suggests:
+    httptest2,
+    httpuv,
     testthat (>= 3.0.0),
-    vcr (>= 0.6.0)
+    withr
 Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0.9000

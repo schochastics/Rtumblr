@@ -11,7 +11,7 @@ get_posts_tag(tag, before, limit = 20, api_key = NULL, ...)
 
 \item{before}{the timestamp of when you'd like to see posts before}
 
-\item{limit}{The number of results to return: 1–50}
+\item{limit}{The number of results to return per request: 1-20}
 
 \item{api_key}{app consumer key. If NULL, attempts to load from the environment variable RTUMBLR_TOKEN}
 
